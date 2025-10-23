@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이메일 SMTP 설정 - 네트워크 모니터링 시스템</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        .email-provider-selector {
+            margin-bottom: 30px;
+        }
+
+        .provider-tabs {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .provider-tab {
+            padding: 12px 24px;
+            border: 2px solid #e1e5e9;
+            border-radius: 8px;
+            background: white;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-weight: 600;
+        }
+
+        .provider-tab.active {
+            background: #4CAF50;
+            color: white;
+            border-color: #4CAF50;
+        }
+
+        .provider-tab:hover:not(.active) {
+            border-color: #4CAF50;
+            color: #4CAF50;
+        }
+
+        .provider-info {
+            background: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            display: none;
+        }
+
+        .provider-info.active {
+            display: block;
+        }
+
+        .provider-info h3 {
+            color: #4CAF50;
+            margin-bottom: 15px;
+        }
+
+        .provider-info ol {
+            padding-left: 20px;
+        }
+
+        .provider-info li {
+            margin-bottom: 8px;
+            line-height: 1.5;
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 12px 15px;
+            border: 2px solid #e1e5e9;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+
+        .form-group input:focus, .form-group select:focus {
+            outline: none;
+            border-color: #4CAF50;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .help-text {
+            font-size: 14px;
+            color: #666;
+            margin-top: 5px;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 15px;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 12px 30px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            flex: 1;
+            min-width: 120px;
+        }
+
+        .btn-primary {
+            background: #4CAF50;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #45a049;
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            background: #6c757d;
+            color: white;
+        }
+
+        .btn-secondary:hover {
+            background: #5a6268;
+        }
+
+        .btn-test {
+            background: #17a2b8;
+            color: white;
+        }
+
+        .btn-test:hover {
+            background: #138496;
+        }
+
+        .status {
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 8px;
+            font-weight: 600;
+        }
+
+        .status.success {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+
+        .status.error {
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+
+        .status.info {
+            background: #d1ecf1;
+            color: #0c5460;
+            border: 1px solid #bee5eb;
+        }
+
+        .loading {
+            display: none;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .spinner {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #4CAF50;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 10px;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: #4CAF50;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        .custom-settings {
+            display: none;
+        }
+
+        .custom-settings.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📧 이메일 SMTP 설정</h1>
+            <p>네트워크 모니터링 시스템의 이메일 알림을 위한 SMTP 설정</p>
+        </div>
+
+        <div class="content">
+            <a href="index.html" class="back-link">← 메인 페이지로 돌아가기</a>
+
+            <div class="email-provider-selector">
+                <h3>이메일 서비스 선택</h3>
+                <div class="provider-tabs">
+                    <div class="provider-tab active" data-provider="gmail">Gmail</div>
+                    <div class="provider-tab" data-provider="naver">네이버 메일</div>
+                    <div class="provider-tab" data-provider="outlook">Outlook</div>
+                    <div class="provider-tab" data-provider="yahoo">Yahoo</div>
+                    <div class="provider-tab" data-provider="custom">사용자 정의</div>
+                </div>
+            </div>
+
+            <!-- Gmail 설정 정보 -->
+            <div class="provider-info active" id="gmail-info">
+                <h3>🔧 Gmail 설정 방법</h3>
+                <ol>
+                    <li>Google 계정 설정으로 이동 (myaccount.google.com)</li>
+                    <li>"보안" 탭 선택</li>
+                    <li>"2단계 인증" 활성화 (필수)</li>
+                    <li>"앱 비밀번호" 클릭</li>
+                    <li>"메일" 앱 선택</li>
+                    <li>생성된 16자리 비밀번호를 아래에 입력</li>
+                </ol>
+                <p><strong>주의:</strong> 일반 Gmail 비밀번호가 아닌 앱 비밀번호를 사용해야 합니다!</p>
+            </div>
+
+            <!-- 네이버 메일 설정 정보 -->
+            <div class="provider-info" id="naver-info">
+                <h3>🔧 네이버 메일 설정 방법</h3>
+                <ol>
+                    <li>네이버 메일 설정으로 이동 (mail.naver.com)</li>
+                    <li>"환경설정" → "POP3/IMAP 설정" 선택</li>
+                    <li>"IMAP/SMTP 사용" 활성화</li>
+                    <li>2단계 인증이 활성화된 경우 "앱 비밀번호" 생성</li>
+                    <li>일반 비밀번호 또는 앱 비밀번호를 아래에 입력</li>
+                </ol>
+                <p><strong>주의:</strong> 2단계 인증이 활성화된 경우 앱 비밀번호를 사용해야 합니다!</p>
+            </div>
+
+            <!-- Outlook 설정 정보 -->
+            <div class="provider-info" id="outlook-info">
+                <h3>🔧 Outlook 설정 방법</h3>
+                <ol>
+                    <li>Outlook 계정으로 로그인</li>
+                    <li>계정 설정에서 "보안" 선택</li>
+                    <li>일반 비밀번호 또는 앱 비밀번호 사용</li>
+                </ol>
+                <p><strong>주의:</strong> 일반 Outlook/Hotmail 계정 정보를 사용하세요.</p>
+            </div>
+
+            <!-- Yahoo 설정 정보 -->
+            <div class="provider-info" id="yahoo-info">
+                <h3>🔧 Yahoo 설정 방법</h3>
+                <ol>
+                    <li>Yahoo 메일 설정으로 이동</li>
+                    <li>"보안" → "앱 비밀번호" 선택</li>
+                    <li>새 앱 비밀번호 생성</li>
+                    <li>생성된 비밀번호를 아래에 입력</li>
+                </ol>
+                <p><strong>주의:</strong> Yahoo는 앱 비밀번호를 사용해야 합니다!</p>
+            </div>
+
+            <!-- 사용자 정의 설정 정보 -->
+            <div class="provider-info" id="custom-info">
+                <h3>🔧 사용자 정의 SMTP 설정</h3>
+                <ol>
+                    <li>이메일 제공업체에 문의하여 SMTP 설정 확인</li>
+                    <li>일반적인 포트: 25, 587 (TLS), 465 (SSL)</li>
+                    <li>인증 방식과 보안 설정 확인</li>
+                </ol>
+                <p><strong>주의:</strong> 제공업체별로 설정이 다를 수 있습니다.</p>
+            </div>
+
+            <form id="emailConfigForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="smtp_server">SMTP 서버</label>
+                        <input type="text" id="smtp_server" value="smtp.gmail.com" required>
+                        <div class="help-text">이메일 제공업체의 SMTP 서버 주소</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="smtp_port">SMTP 포트</label>
+                        <input type="number" id="smtp_port" value="587" required>
+                        <div class="help-text">SMTP 포트 번호 (일반적으로 587)</div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="username">이메일 주소</label>
+                    <input type="email" id="username" placeholder="your-email@example.com" required>
+                    <div class="help-text">알림을 발송할 이메일 주소</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">비밀번호</label>
+                    <input type="password" id="password" placeholder="비밀번호 또는 앱 비밀번호" required>
+                    <div class="help-text">이메일 계정 비밀번호 (2단계 인증 시 앱 비밀번호 사용)</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="from_email">발신자 이메일</label>
+                    <input type="email" id="from_email" placeholder="your-email@example.com" required>
+                    <div class="help-text">알림 이메일의 발신자 주소</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="to_emails">수신자 이메일</label>
+                    <input type="text" id="to_emails" placeholder="admin@company.com, manager@company.com" required>
+                    <div class="help-text">알림을 받을 이메일 주소들 (쉼표로 구분)</div>
+                </div>
+
+                <div class="button-group">
+                    <button type="button" class="btn btn-test" onclick="testEmailConfig()">🧪 테스트 발송</button>
+                    <button type="button" class="btn btn-secondary" onclick="loadCurrentConfig()">📥 현재 설정 불러오기</button>
+                    <button type="submit" class="btn btn-primary">💾 설정 저장</button>
+                </div>
+            </form>
+
+            <div class="loading" id="loading">
+                <div class="spinner"></div>
+                <p>처리 중...</p>
+            </div>
+
+            <div id="status"></div>
+        </div>
+    </div>
+
+    <script>
+        // 이메일 제공업체별 설정
+        const emailProviders = {
+            gmail: {
+                smtp_server: 'smtp.gmail.com',
+                smtp_port: 587,
+                help: 'Gmail SMTP 서버 (고정값)'
+            },
+            naver: {
+                smtp_server: 'smtp.naver.com',
+                smtp_port: 587,
+                help: '네이버 메일 SMTP 서버 (고정값)'
+            },
+            outlook: {
+                smtp_server: 'smtp-mail.outlook.com',
+                smtp_port: 587,
+                help: 'Outlook SMTP 서버 (고정값)'
+            },
+            yahoo: {
+                smtp_server: 'smtp.mail.yahoo.com',
+                smtp_port: 587,
+                help: 'Yahoo SMTP 서버 (고정값)'
+            },
+            custom: {
+                smtp_server: '',
+                smtp_port: 587,
+                help: '사용자 정의 SMTP 서버'
+            }
+        };
+
+        // 제공업체 탭 클릭 이벤트
+        document.querySelectorAll('.provider-tab').forEach(tab => {
+            tab.addEventListener('click', () => {
+                // 모든 탭 비활성화
+                document.querySelectorAll('.provider-tab').forEach(t => t.classList.remove('active'));
+                document.querySelectorAll('.provider-info').forEach(info => info.classList.remove('active'));
+                
+                // 선택된 탭 활성화
+                tab.classList.add('active');
+                const provider = tab.dataset.provider;
+                document.getElementById(provider + '-info').classList.add('active');
+                
+                // SMTP 설정 업데이트
+                updateSMTPConfig(provider);
+            });
+        });
+
+        // SMTP 설정 업데이트
+        function updateSMTPConfig(provider) {
+            const config = emailProviders[provider];
+            document.getElementById('smtp_server').value = config.smtp_server;
+            document.getElementById('smtp_port').value = config.smtp_port;
+            
+            // 사용자 정의가 아닌 경우 읽기 전용으로 설정
+            const serverInput = document.getElementById('smtp_server');
+            const portInput = document.getElementById('smtp_port');
+            
+            if (provider === 'custom') {
+                serverInput.removeAttribute('readonly');
+                portInput.removeAttribute('readonly');
+            } else {
+                serverInput.setAttribute('readonly', 'readonly');
+                portInput.setAttribute('readonly', 'readonly');
+            }
+        }
+
+        // 폼 제출 처리
+        document.getElementById('emailConfigForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            await saveEmailConfig();
+        });
+
+        // 이메일 설정 저장
+        async function saveEmailConfig() {
+            const formData = {
+                smtp_server: document.getElementById('smtp_server').value,
+                smtp_port: parseInt(document.getElementById('smtp_port').value),
+                username: document.getElementById('username').value,
+                password: document.getElementById('password').value,
+                from_email: document.getElementById('from_email').value,
+                to_emails: document.getElementById('to_emails').value.split(',').map(email => email.trim())
+            };
+
+            showLoading(true);
+            clearStatus();
+
+            try {
+                const response = await fetch('/api/email/settings', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(formData)
+                });
+
+                const result = await response.json();
+
+                if (response.ok) {
+                    showStatus('✅ 이메일 설정이 성공적으로 저장되었습니다!', 'success');
+                } else {
+                    showStatus(`❌ 설정 저장 실패: ${result.error}`, 'error');
+                }
+            } catch (error) {
+                showStatus(`❌ 네트워크 오류: ${error.message}`, 'error');
+            } finally {
+                showLoading(false);
+            }
+        }
+
+        // 이메일 설정 테스트
+        async function testEmailConfig() {
+            const formData = {
+                smtp_server: document.getElementById('smtp_server').value,
+                smtp_port: parseInt(document.getElementById('smtp_port').value),
+                username: document.getElementById('username').value,
+                password: document.getElementById('password').value,
+                from_email: document.getElementById('from_email').value,
+                to_emails: document.getElementById('to_emails').value.split(',').map(email => email.trim())
+            };
+
+            showLoading(true);
+            clearStatus();
+
+            try {
+                const response = await fetch('/api/email/test', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(formData)
+                });
+
+                const result = await response.json();
+
+                if (response.ok) {
+                    showStatus('✅ 테스트 이메일이 성공적으로 발송되었습니다! 받은편지함을 확인해주세요.', 'success');
+                } else {
+                    showStatus(`❌ 테스트 발송 실패: ${result.error}`, 'error');
+                }
+            } catch (error) {
+                showStatus(`❌ 네트워크 오류: ${error.message}`, 'error');
+            } finally {
+                showLoading(false);
+            }
+        }
+
+        // 현재 설정 불러오기
+        async function loadCurrentConfig() {
+            showLoading(true);
+            clearStatus();
+
+            try {
+                const response = await fetch('/api/email/settings');
+                const config = await response.json();
+
+                if (config) {
+                    document.getElementById('smtp_server').value = config.smtp_server || '';
+                    document.getElementById('smtp_port').value = config.smtp_port || 587;
+                    document.getElementById('username').value = config.username || '';
+                    document.getElementById('from_email').value = config.from_email || '';
+                    document.getElementById('to_emails').value = config.to_emails ? config.to_emails.join(', ') : '';
+                    
+                    // 현재 설정에 맞는 제공업체 탭 활성화
+                    const currentProvider = Object.keys(emailProviders).find(provider => 
+                        emailProviders[provider].smtp_server === config.smtp_server
+                    ) || 'custom';
+                    
+                    document.querySelectorAll('.provider-tab').forEach(t => t.classList.remove('active'));
+                    document.querySelectorAll('.provider-info').forEach(info => info.classList.remove('active'));
+                    
+                    document.querySelector(`[data-provider="${currentProvider}"]`).classList.add('active');
+                    document.getElementById(currentProvider + '-info').classList.add('active');
+                    updateSMTPConfig(currentProvider);
+                    
+                    showStatus('📥 현재 설정을 불러왔습니다. (비밀번호는 보안상 표시되지 않습니다)', 'info');
+                } else {
+                    showStatus('ℹ️ 저장된 설정이 없습니다.', 'info');
+                }
+            } catch (error) {
+                showStatus(`❌ 설정 불러오기 실패: ${error.message}`, 'error');
+            } finally {
+                showLoading(false);
+            }
+        }
+
+        // 로딩 표시
+        function showLoading(show) {
+            document.getElementById('loading').style.display = show ? 'block' : 'none';
+        }
+
+        // 상태 메시지 표시
+        function showStatus(message, type) {
+            const statusDiv = document.getElementById('status');
+            statusDiv.innerHTML = message;
+            statusDiv.className = `status ${type}`;
+        }
+
+        // 상태 메시지 지우기
+        function clearStatus() {
+            document.getElementById('status').innerHTML = '';
+            document.getElementById('status').className = 'status';
+        }
+
+        // 페이지 로드 시 현재 설정 불러오기
+        window.addEventListener('load', loadCurrentConfig);
+    </script>
+</body>
+</html>
