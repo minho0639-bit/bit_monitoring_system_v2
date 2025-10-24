@@ -2,7 +2,11 @@ const express = require('express');
 const nodemailer = require('nodemailer');
 const cors = require('cors');
 const bodyParser = require('body-parser');
+const http = require('http');
+const https = require('https');
+const { URL } = require('url');
 const sqlite3 = require('sqlite3').verbose();
+const WebSocket = require('ws');
 const path = require('path');
 const { exec } = require('child_process');
 const { promisify } = require('util');
@@ -392,6 +396,239 @@ async function pingHost(host) {
             timestamp: new Date().toISOString()
         };
     }
+}
+
+
+// Check IP address on common ports
+async function checkIPAddress(ip) {
+    // For internal IPs, try fewer ports with shorter timeout
+    const ports = [80, 443, 22, 21, 25, 53];
+    
+    // Use Promise.allSettled to check multiple ports simultaneously
+    const portChecks = ports.map(port => checkPort(ip, port, 2000)); // 2 second timeout
+    
+    try {
+        const results = await Promise.allSettled(portChecks);
+        
+        // Find first successful connection
+        for (const result of results) {
+            if (result.status === 'fulfilled' && result.value.isOnline) {
+                return result.value;
+            }
+        }
+        
+        return { isOnline: false, responseTime: null };
+    } catch (error) {
+        return { isOnline: false, responseTime: null };
+    }
+}
+
+// Check domain name
+async function checkDomain(domain) {
+    try {
+        // Try HTTP first
+        const httpResult = await checkHttpEndpoint(`http://${domain}`);
+        if (httpResult.isOnline) {
+            return httpResult;
+        }
+        
+        // Try HTTPS
+        const httpsResult = await checkHttpEndpoint(`https://${domain}`);
+        return httpsResult;
+    } catch (error) {
+        return { isOnline: false, responseTime: null };
+    }
+}
+
+// Check specific port
+async function checkPort(host, port, timeout = 5000) {
+    return new Promise((resolve) => {
+        const startTime = Date.now();
+        const net = require('net');
+        
+        const socket = new net.Socket();
+        
+        socket.setTimeout(timeout);
+        
+        socket.on('connect', () => {
+            const responseTime = Date.now() - startTime;
+            socket.destroy();
+            resolve({
+                isOnline: true,
+                responseTime: responseTime
+            });
+        });
+        
+        socket.on('error', () => {
+            resolve({
+                isOnline: false,
+                responseTime: null
+            });
+        });
+        
+        socket.on('timeout', () => {
+            socket.destroy();
+            resolve({
+                isOnline: false,
+                responseTime: null
+            });
+        });
+        
+        socket.connect(port, host);
+    });
+}
+
+// Validate IP address
+function isValidIP(ip) {
+    const ipRegex = /^(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$/;
+    return ipRegex.test(ip);
+}
+
+// Check if IP is internal/private
+function isInternalIP(ip) {
+    const parts = ip.split('.').map(Number);
+    
+    // 192.168.x.x
+    if (parts[0] === 192 && parts[1] === 168) return true;
+    
+    // 10.x.x.x
+    if (parts[0] === 10) return true;
+    
+    // 172.16.x.x - 172.31.x.x
+    if (parts[0] === 172 && parts[1] >= 16 && parts[1] <= 31) return true;
+    
+    // 127.x.x.x (localhost)
+    if (parts[0] === 127) return true;
+    
+    return false;
+}
+
+// Check internal IP with faster timeout and fewer ports
+async function checkInternalIP(ip) {
+    // For internal IPs, try multiple methods in parallel with short timeout
+    const methods = [
+        // Method 1: Check common ports (fastest)
+        checkInternalPorts(ip),
+        // Method 2: Try ARP table lookup (if available)
+        checkARPTable(ip)
+    ];
+    
+    try {
+        // Use Promise.race to get the first result
+        const result = await Promise.race(methods);
+        if (result.isOnline) {
+            return result;
+        }
+        
+        // If no quick result, try HTTP method
+        const httpResult = await checkInternalHTTP(ip);
+        return httpResult;
+        
+    } catch (error) {
+        return { isOnline: false, responseTime: null };
+    }
+}
+
+// Check internal IP ports
+async function checkInternalPorts(ip) {
+    // Only check most common ports for internal IPs
+    const ports = [80, 443, 22, 21, 23, 25, 53];
+    
+    const portChecks = ports.map(port => checkPort(ip, port, 200)); // 200ms timeout
+    
+    try {
+        const results = await Promise.allSettled(portChecks);
+        
+        for (const result of results) {
+            if (result.status === 'fulfilled' && result.value.isOnline) {
+                return result.value;
+            }
+        }
+        
+        return { isOnline: false, responseTime: null };
+    } catch (error) {
+        return { isOnline: false, responseTime: null };
+    }
+}
+
+// Check ARP table for internal IP
+async function checkARPTable(ip) {
+    return new Promise((resolve) => {
+        const { exec } = require('child_process');
+        
+        // Try to find IP in ARP table
+        exec(`arp -n ${ip}`, (error, stdout, stderr) => {
+            if (error) {
+                resolve({ isOnline: false, responseTime: null });
+                return;
+            }
+            
+            // Check if IP is in ARP table
+            if (stdout.includes(ip) && !stdout.includes('incomplete')) {
+                resolve({ isOnline: true, responseTime: 1 });
+            } else {
+                resolve({ isOnline: false, responseTime: null });
+            }
+        });
+    });
+}
+
+// Check internal IP with HTTP requests
+async function checkInternalHTTP(ip) {
+    // Only check most common HTTP ports
+    const urls = [
+        `http://${ip}`,
+        `http://${ip}:8080`,
+        `http://${ip}:3000`
+    ];
+    
+    const httpChecks = urls.map(url => checkHttpEndpointWithTimeout(url, 1000)); // 1 second timeout
+    
+    try {
+        const results = await Promise.allSettled(httpChecks);
+        
+        for (const result of results) {
+            if (result.status === 'fulfilled' && result.value.isOnline) {
+                return result.value;
+            }
+        }
+        
+        return { isOnline: false, responseTime: null };
+    } catch (error) {
+        return { isOnline: false, responseTime: null };
+    }
+}
+
+// Check HTTP endpoint with custom timeout
+async function checkHttpEndpointWithTimeout(url, timeout = 5000) {
+    return new Promise((resolve) => {
+        const startTime = Date.now();
+        const isHttps = url.startsWith('https://');
+        const client = isHttps ? https : http;
+        
+        const req = client.get(url, { timeout: timeout }, (res) => {
+            const responseTime = Date.now() - startTime;
+            resolve({
+                isOnline: res.statusCode >= 200 && res.statusCode < 400,
+                responseTime: responseTime
+            });
+        });
+        
+        req.on('error', () => {
+            resolve({
+                isOnline: false,
+                responseTime: null
+            });
+        });
+        
+        req.on('timeout', () => {
+            req.destroy();
+            resolve({
+                isOnline: false,
+                responseTime: null
+            });
+        });
+    });
 }
 
 // Check if we should send an offline alert (avoid spam)
@@ -820,7 +1057,6 @@ app.listen(PORT, () => {
     console.log(`🚀 Network Monitoring System running on port ${PORT}`);
     console.log(`📧 Email service: ${emailTransporter ? 'Configured' : 'Not configured'}`);
     console.log(`⏰ Monitoring interval: 30 seconds`);
-    console.log(`🔧 Ping method: Real ICMP ping`);
 });
 
 // Graceful shutdown
