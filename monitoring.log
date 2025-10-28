@@ -1,0 +1,669 @@
+2025-10-28 06:41:34,432 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 06:41:34,433 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:41:34,433 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 06:41:34,438 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.30.0.2:5000
+2025-10-28 06:41:34,438 - INFO - [33mPress CTRL+C to quit[0m
+2025-10-28 06:41:34,439 - INFO -  * Restarting with stat
+2025-10-28 06:41:34,678 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 06:41:34,679 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:41:34,679 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 06:41:34,683 - WARNING -  * Debugger is active!
+2025-10-28 06:41:34,684 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 06:42:04,434 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:42:04,679 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:42:34,434 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:42:34,680 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:43:04,435 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:43:04,680 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:43:34,435 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:43:34,681 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:44:04,436 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:44:04,681 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:44:34,436 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:44:34,682 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:45:04,437 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:45:04,682 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:45:34,437 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:45:34,682 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:46:04,438 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:46:04,683 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:46:34,438 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:46:34,683 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:47:04,439 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:47:04,684 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:47:34,439 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:47:34,684 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:48:04,440 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:48:04,685 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:48:34,440 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:48:34,685 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:49:04,440 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:49:04,685 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:49:34,441 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:49:34,686 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:50:04,441 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:50:04,686 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:50:34,442 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:50:34,687 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:51:04,442 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:51:04,687 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:51:34,443 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:51:34,688 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:51:35,459 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 06:51:35,460 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:51:35,460 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 06:51:42,037 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 06:51:42,146 - INFO -  * Restarting with stat
+2025-10-28 06:51:42,465 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 06:51:42,465 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:51:42,466 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 06:51:42,471 - WARNING -  * Debugger is active!
+2025-10-28 06:51:42,471 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 06:51:56,586 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 06:51:56,658 - INFO -  * Restarting with stat
+2025-10-28 06:51:57,085 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 06:51:57,091 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 06:51:57,097 - WARNING -  * Debugger is active!
+2025-10-28 06:51:57,097 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 06:51:59,699 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 06:51:59,704 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 06:51:59,713 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.30.0.2:8080
+2025-10-28 06:51:59,713 - INFO - [33mPress CTRL+C to quit[0m
+2025-10-28 06:51:59,713 - INFO -  * Restarting with stat
+2025-10-28 06:52:00,245 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 06:52:00,250 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 06:52:00,262 - WARNING -  * Debugger is active!
+2025-10-28 06:52:00,263 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 06:52:04,444 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:52:34,444 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:53:04,445 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:53:34,445 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:54:04,446 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:54:34,446 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:55:04,447 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:55:34,447 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:56:04,448 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:56:34,448 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:57:04,449 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:57:34,449 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:58:04,450 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:58:34,450 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:59:04,451 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:59:34,451 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:00:04,452 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:00:34,452 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:01:04,453 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:01:34,454 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:02:01,151 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:02:01,157 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:02:04,455 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:02:05,249 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 07:02:05,392 - INFO -  * Restarting with stat
+2025-10-28 07:02:05,400 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 07:02:05,554 - INFO -  * Restarting with stat
+2025-10-28 07:02:05,919 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:02:05,925 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:02:05,941 - WARNING -  * Debugger is active!
+2025-10-28 07:02:05,942 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 07:02:06,079 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:02:06,085 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:02:06,103 - WARNING -  * Debugger is active!
+2025-10-28 07:02:06,103 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 07:02:07,630 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:02:07,636 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:02:07,653 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:9000
+ * Running on http://172.30.0.2:9000
+2025-10-28 07:02:07,653 - INFO - [33mPress CTRL+C to quit[0m
+2025-10-28 07:02:07,654 - INFO -  * Restarting with stat
+2025-10-28 07:02:08,260 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:02:08,266 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:02:08,283 - WARNING -  * Debugger is active!
+2025-10-28 07:02:08,284 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 07:02:34,456 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:03:04,458 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:03:34,459 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:04:04,461 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:04:34,462 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:05:04,463 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:05:34,463 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:06:04,464 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:06:34,466 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:07:04,467 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:07:34,468 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:08:04,469 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:08:34,469 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:09:04,470 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:09:34,471 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:10:04,472 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:10:34,472 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:11:04,474 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:11:34,474 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:12:04,475 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:12:11,967 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:12:11,975 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:12:22,921 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 07:12:22,924 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 07:12:23,245 - INFO -  * Restarting with stat
+2025-10-28 07:12:23,282 - INFO -  * Restarting with stat
+2025-10-28 07:12:23,315 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 07:12:23,571 - INFO -  * Restarting with stat
+2025-10-28 07:12:24,268 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:12:24,283 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:12:24,306 - WARNING -  * Debugger is active!
+2025-10-28 07:12:24,311 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 07:12:24,352 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:12:24,364 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:12:24,394 - WARNING -  * Debugger is active!
+2025-10-28 07:12:24,395 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 07:12:24,535 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:12:24,549 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:12:24,568 - WARNING -  * Debugger is active!
+2025-10-28 07:12:24,572 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 07:12:28,618 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:12:28,630 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:12:28,653 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:3000
+ * Running on http://172.30.0.2:3000
+2025-10-28 07:12:28,654 - INFO - [33mPress CTRL+C to quit[0m
+2025-10-28 07:12:28,659 - INFO -  * Restarting with stat
+2025-10-28 07:12:29,677 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:12:29,686 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:12:29,720 - WARNING -  * Debugger is active!
+2025-10-28 07:12:29,721 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 07:12:34,476 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:13:04,477 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:13:34,478 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:14:04,478 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:14:34,482 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:15:04,483 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:15:34,484 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:16:04,485 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:16:34,486 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:17:04,487 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:17:34,488 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:18:04,489 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:18:34,489 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:19:04,490 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:19:34,491 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:20:04,492 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:20:34,492 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:21:04,493 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:21:34,494 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:22:04,498 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:22:34,498 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:22:43,074 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:22:43,087 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:22:53,609 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 07:22:53,689 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 07:22:53,823 - INFO -  * Restarting with stat
+2025-10-28 07:22:54,216 - INFO -  * Restarting with stat
+2025-10-28 07:22:54,362 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 07:22:54,385 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 07:22:54,693 - INFO -  * Restarting with stat
+2025-10-28 07:22:54,849 - INFO -  * Restarting with stat
+2025-10-28 07:22:54,935 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:22:54,941 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:22:54,943 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:22:54,947 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:22:54,952 - WARNING -  * Debugger is active!
+2025-10-28 07:22:54,955 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 07:22:54,973 - WARNING -  * Debugger is active!
+2025-10-28 07:22:54,974 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 07:22:55,585 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:22:55,595 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:22:55,624 - WARNING -  * Debugger is active!
+2025-10-28 07:22:55,624 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 07:22:55,672 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:22:55,682 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:22:55,705 - WARNING -  * Debugger is active!
+2025-10-28 07:22:55,710 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 07:23:01,467 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:23:01,483 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:23:01,510 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://172.30.0.2:8000
+2025-10-28 07:23:01,510 - INFO - [33mPress CTRL+C to quit[0m
+2025-10-28 07:23:01,515 - INFO -  * Restarting with stat
+2025-10-28 07:23:02,364 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:23:02,375 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:23:02,409 - WARNING -  * Debugger is active!
+2025-10-28 07:23:02,410 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 07:23:04,499 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.

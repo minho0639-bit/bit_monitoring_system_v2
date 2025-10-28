@@ -1,0 +1,126 @@
+{% extends "base.html" %}
+
+{% block title %}장치 관리 - Ping 모니터링 시스템{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-12">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h1><i class="fas fa-server"></i> 장치 관리</h1>
+            <a href="{{ url_for('add_device') }}" class="btn btn-primary">
+                <i class="fas fa-plus"></i> 장치 추가
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                {% if devices %}
+                    <div class="table-responsive">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>장치명</th>
+                                    <th>IP 주소</th>
+                                    <th>설명</th>
+                                    <th>상태</th>
+                                    <th>등록일</th>
+                                    <th>최근 업데이트</th>
+                                    <th>동작</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for device in devices %}
+                                <tr>
+                                    <td>
+                                        <strong>{{ device.name }}</strong>
+                                    </td>
+                                    <td>
+                                        <code>{{ device.ip_address }}</code>
+                                    </td>
+                                    <td>
+                                        {% if device.description %}
+                                            {{ device.description[:50] }}{% if device.description|length > 50 %}...{% endif %}
+                                        {% else %}
+                                            <span class="text-muted">-</span>
+                                        {% endif %}
+                                    </td>
+                                    <td>
+                                        {% if device.is_active %}
+                                            <span class="badge bg-success">활성</span>
+                                        {% else %}
+                                            <span class="badge bg-secondary">비활성</span>
+                                        {% endif %}
+                                    </td>
+                                    <td>{{ device.created_at.strftime('%Y-%m-%d %H:%M') }}</td>
+                                    <td>{{ device.updated_at.strftime('%Y-%m-%d %H:%M') }}</td>
+                                    <td>
+                                        <div class="btn-group" role="group">
+                                            <a href="{{ url_for('edit_device', device_id=device.id) }}" 
+                                               class="btn btn-sm btn-outline-primary">
+                                                <i class="fas fa-edit"></i> 수정
+                                            </a>
+                                            <button type="button" class="btn btn-sm btn-outline-danger" 
+                                                    onclick="confirmDelete({{ device.id }}, '{{ device.name }}')">
+                                                <i class="fas fa-trash"></i> 삭제
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                {% else %}
+                    <div class="text-center py-5">
+                        <i class="fas fa-server fa-3x text-muted mb-3"></i>
+                        <h5 class="text-muted">등록된 장치가 없습니다</h5>
+                        <p class="text-muted">새로운 장치를 추가하여 모니터링을 시작하세요.</p>
+                        <a href="{{ url_for('add_device') }}" class="btn btn-primary">
+                            <i class="fas fa-plus"></i> 첫 번째 장치 추가
+                        </a>
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 삭제 확인 모달 -->
+<div class="modal fade" id="deleteModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">장치 삭제 확인</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <p>정말로 <strong id="deleteDeviceName"></strong> 장치를 삭제하시겠습니까?</p>
+                <p class="text-danger">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    이 작업은 되돌릴 수 없으며, 해당 장치의 모든 모니터링 데이터가 삭제됩니다.
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">취소</button>
+                <a href="#" id="deleteConfirmBtn" class="btn btn-danger">삭제</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+function confirmDelete(deviceId, deviceName) {
+    document.getElementById('deleteDeviceName').textContent = deviceName;
+    document.getElementById('deleteConfirmBtn').href = `/delete_device/${deviceId}`;
+    
+    const modal = new bootstrap.Modal(document.getElementById('deleteModal'));
+    modal.show();
+}
+</script>
+{% endblock %}

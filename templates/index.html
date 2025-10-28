@@ -1,0 +1,337 @@
+{% extends "base.html" %}
+
+{% block title %}대시보드 - Ping 모니터링 시스템{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-12">
+        <h1 class="mb-4">
+            <i class="fas fa-tachometer-alt"></i> 모니터링 대시보드
+            <span class="badge bg-{{ 'success' if monitoring_active else 'secondary' }} ms-2">
+                {{ '실행 중' if monitoring_active else '중지됨' }}
+            </span>
+        </h1>
+    </div>
+</div>
+
+<!-- 통계 카드 -->
+<div class="row mb-4">
+    <div class="col-md-3">
+        <div class="card bg-primary text-white">
+            <div class="card-body">
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <h4 class="card-title">{{ total_devices }}</h4>
+                        <p class="card-text">총 장치</p>
+                    </div>
+                    <div class="align-self-center">
+                        <i class="fas fa-server fa-2x"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card bg-success text-white">
+            <div class="card-body">
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <h4 class="card-title">{{ active_devices }}</h4>
+                        <p class="card-text">활성 장치</p>
+                    </div>
+                    <div class="align-self-center">
+                        <i class="fas fa-check-circle fa-2x"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card bg-danger text-white">
+            <div class="card-body">
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <h4 class="card-title">{{ failed_devices }}</h4>
+                        <p class="card-text">실패 장치</p>
+                    </div>
+                    <div class="align-self-center">
+                        <i class="fas fa-exclamation-triangle fa-2x"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card bg-info text-white">
+            <div class="card-body">
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <h4 class="card-title">{{ recent_logs|length }}</h4>
+                        <p class="card-text">최근 로그</p>
+                    </div>
+                    <div class="align-self-center">
+                        <i class="fas fa-list fa-2x"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <!-- 장치 상태 테이블 -->
+    <div class="col-lg-8">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="card-title mb-0">
+                    <i class="fas fa-server"></i> 장치 상태
+                </h5>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>장치명</th>
+                                <th>IP 주소</th>
+                                <th>상태</th>
+                                <th>마지막 응답시간</th>
+                                <th>마지막 체크</th>
+                                <th>동작</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for device in devices %}
+                            <tr>
+                                <td>
+                                    <strong>{{ device.name }}</strong>
+                                    {% if device.description %}
+                                        <br><small class="text-muted">{{ device.description }}</small>
+                                    {% endif %}
+                                </td>
+                                <td><code>{{ device.ip_address }}</code></td>
+                                <td>
+                                    {% if device.is_active %}
+                                        <span class="badge bg-success">활성</span>
+                                    {% else %}
+                                        <span class="badge bg-secondary">비활성</span>
+                                    {% endif %}
+                                </td>
+                                <td>
+                                    {% set last_success = device.ping_logs|selectattr('is_success')|first %}
+                                    {% if last_success %}
+                                        <span class="text-success">{{ last_success.response_time }}ms</span>
+                                    {% else %}
+                                        <span class="text-muted">-</span>
+                                    {% endif %}
+                                </td>
+                                <td>
+                                    {% set last_log = device.ping_logs|first %}
+                                    {% if last_log %}
+                                        {{ last_log.timestamp.strftime('%H:%M:%S') }}
+                                    {% else %}
+                                        <span class="text-muted">-</span>
+                                    {% endif %}
+                                </td>
+                                <td>
+                                    <button class="btn btn-sm btn-outline-primary" onclick="showDeviceStatus({{ device.id }})">
+                                        <i class="fas fa-chart-line"></i> 상세
+                                    </button>
+                                </td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 최근 알림 -->
+    <div class="col-lg-4">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="card-title mb-0">
+                    <i class="fas fa-bell"></i> 최근 알림
+                </h5>
+            </div>
+            <div class="card-body">
+                {% if recent_alerts %}
+                    <div class="list-group list-group-flush">
+                        {% for alert in recent_alerts %}
+                        <div class="list-group-item d-flex justify-content-between align-items-start">
+                            <div class="ms-2 me-auto">
+                                <div class="fw-bold">
+                                    {{ alert.device.name }}
+                                    <span class="badge bg-{{ 'danger' if alert.alert_type == 'ping_failed' else 'success' }} ms-1">
+                                        {{ '실패' if alert.alert_type == 'ping_failed' else '복구' }}
+                                    </span>
+                                </div>
+                                <small class="text-muted">{{ alert.message }}</small>
+                                <br><small class="text-muted">{{ alert.timestamp.strftime('%m-%d %H:%M') }}</small>
+                            </div>
+                            {% if alert.email_sent %}
+                                <i class="fas fa-envelope text-success" title="이메일 전송됨"></i>
+                            {% endif %}
+                        </div>
+                        {% endfor %}
+                    </div>
+                {% else %}
+                    <p class="text-muted text-center">최근 알림이 없습니다.</p>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 최근 로그 -->
+<div class="row mt-4">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="card-title mb-0">
+                    <i class="fas fa-list"></i> 최근 Ping 로그
+                </h5>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-sm">
+                        <thead>
+                            <tr>
+                                <th>시간</th>
+                                <th>장치</th>
+                                <th>IP</th>
+                                <th>상태</th>
+                                <th>응답시간</th>
+                                <th>오류</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for log in recent_logs %}
+                            <tr class="{{ 'table-success' if log.is_success else 'table-danger' }}">
+                                <td>{{ log.timestamp.strftime('%H:%M:%S') }}</td>
+                                <td>{{ log.device.name }}</td>
+                                <td><code>{{ log.device.ip_address }}</code></td>
+                                <td>
+                                    {% if log.is_success %}
+                                        <i class="fas fa-check text-success"></i> 성공
+                                    {% else %}
+                                        <i class="fas fa-times text-danger"></i> 실패
+                                    {% endif %}
+                                </td>
+                                <td>
+                                    {% if log.response_time %}
+                                        {{ log.response_time }}ms
+                                    {% else %}
+                                        -
+                                    {% endif %}
+                                </td>
+                                <td>
+                                    {% if log.error_message %}
+                                        <small class="text-danger">{{ log.error_message }}</small>
+                                    {% else %}
+                                        -
+                                    {% endif %}
+                                </td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 장치 상세 모달 -->
+<div class="modal fade" id="deviceStatusModal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">장치 상세 정보</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <div id="deviceStatusContent">
+                    <div class="text-center">
+                        <div class="spinner-border" role="status">
+                            <span class="visually-hidden">로딩중...</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+function showDeviceStatus(deviceId) {
+    const modal = new bootstrap.Modal(document.getElementById('deviceStatusModal'));
+    modal.show();
+    
+    fetch(`/api/device_status/${deviceId}`)
+        .then(response => response.json())
+        .then(data => {
+            const content = document.getElementById('deviceStatusContent');
+            content.innerHTML = `
+                <div class="row">
+                    <div class="col-md-6">
+                        <h6>장치 정보</h6>
+                        <p><strong>이름:</strong> ${data.device.name}</p>
+                        <p><strong>IP:</strong> ${data.device.ip_address}</p>
+                        <p><strong>상태:</strong> 
+                            <span class="badge bg-${data.device.is_active ? 'success' : 'secondary'}">
+                                ${data.device.is_active ? '활성' : '비활성'}
+                            </span>
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <h6>통계 (24시간)</h6>
+                        <p><strong>총 Ping:</strong> ${data.stats.total_pings}</p>
+                        <p><strong>성공률:</strong> ${data.stats.success_rate}%</p>
+                        <p><strong>평균 응답시간:</strong> ${data.stats.avg_response_time}ms</p>
+                    </div>
+                </div>
+                <hr>
+                <h6>최근 로그</h6>
+                <div class="table-responsive">
+                    <table class="table table-sm">
+                        <thead>
+                            <tr>
+                                <th>시간</th>
+                                <th>상태</th>
+                                <th>응답시간</th>
+                                <th>오류</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            ${data.recent_logs.map(log => `
+                                <tr class="${log.is_success ? 'table-success' : 'table-danger'}">
+                                    <td>${new Date(log.timestamp).toLocaleTimeString()}</td>
+                                    <td>
+                                        <i class="fas fa-${log.is_success ? 'check text-success' : 'times text-danger'}"></i>
+                                        ${log.is_success ? '성공' : '실패'}
+                                    </td>
+                                    <td>${log.response_time ? log.response_time + 'ms' : '-'}</td>
+                                    <td>${log.error_message || '-'}</td>
+                                </tr>
+                            `).join('')}
+                        </tbody>
+                    </table>
+                </div>
+            `;
+        })
+        .catch(error => {
+            document.getElementById('deviceStatusContent').innerHTML = 
+                '<div class="alert alert-danger">데이터를 불러올 수 없습니다.</div>';
+        });
+}
+
+// 자동 새로고침 (30초마다)
+setInterval(() => {
+    location.reload();
+}, 30000);
+</script>
+{% endblock %}
