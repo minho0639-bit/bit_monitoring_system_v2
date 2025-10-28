@@ -13,7 +13,7 @@ import smtplib
 import logging
 import subprocess
 import re
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from typing import List, Dict, Optional
@@ -56,8 +56,8 @@ class Device(db.Model):
     ip_address = db.Column(db.String(45), nullable=False, unique=True)
     description = db.Column(db.Text)
     is_active = db.Column(db.Boolean, default=True)
-    created_at = db.Column(db.DateTime, default=datetime.utcnow)
-    updated_at = db.Column(db.DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+    created_at = db.Column(db.DateTime, default=lambda: datetime.now(timezone.utc))
+    updated_at = db.Column(db.DateTime, default=lambda: datetime.now(timezone.utc), onupdate=lambda: datetime.now(timezone.utc))
     
     # 관계 설정
     ping_logs = db.relationship('PingLog', backref='device', lazy=True, cascade='all, delete-orphan')
@@ -67,7 +67,7 @@ class PingLog(db.Model):
     device_id = db.Column(db.Integer, db.ForeignKey('device.id'), nullable=False)
     is_success = db.Column(db.Boolean, nullable=False)
     response_time = db.Column(db.Float)  # ms 단위
-    timestamp = db.Column(db.DateTime, default=datetime.utcnow)
+    timestamp = db.Column(db.DateTime, default=lambda: datetime.now(timezone.utc))
     error_message = db.Column(db.Text)
 
 class AlertLog(db.Model):
@@ -75,8 +75,11 @@ class AlertLog(db.Model):
     device_id = db.Column(db.Integer, db.ForeignKey('device.id'), nullable=False)
     alert_type = db.Column(db.String(50), nullable=False)  # 'ping_failed', 'ping_recovered'
     message = db.Column(db.Text, nullable=False)
-    timestamp = db.Column(db.DateTime, default=datetime.utcnow)
+    timestamp = db.Column(db.DateTime, default=lambda: datetime.now(timezone.utc))
     email_sent = db.Column(db.Boolean, default=False)
+    
+    # 관계 설정
+    device = db.relationship('Device', backref='alert_logs')
 
 # 전역 변수
 monitoring_active = False
@@ -213,7 +216,7 @@ def ping_device(device: Device) -> Dict:
 
 def check_device_status(device: Device, ping_result: Dict):
     """장치 상태 확인 및 알림 처리"""
-    current_time = datetime.utcnow()
+    current_time = datetime.now(timezone.utc)
     device_key = f"{device.id}_{device.ip_address}"
     
     # ping 실패 시
@@ -375,7 +378,7 @@ def edit_device(device_id):
         device.ip_address = request.form['ip_address']
         device.description = request.form.get('description', '')
         device.is_active = 'is_active' in request.form
-        device.updated_at = datetime.utcnow()
+        device.updated_at = datetime.now(timezone.utc)
         
         db.session.commit()
         flash('장치 정보가 업데이트되었습니다.', 'success')
@@ -411,7 +414,7 @@ def device_status(device_id):
     device = Device.query.get_or_404(device_id)
     
     # 최근 24시간 로그
-    since = datetime.utcnow() - timedelta(hours=24)
+    since = datetime.now(timezone.utc) - timedelta(hours=24)
     logs = PingLog.query.filter(
         PingLog.device_id == device_id,
         PingLog.timestamp >= since
