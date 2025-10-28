@@ -112,7 +112,13 @@
                                 <td><code>{{ device.ip_address }}</code></td>
                                 <td>
                                     {% if device.is_active %}
-                                        <span class="badge bg-success">활성</span>
+                                        {% if device.status == 'active' %}
+                                            <span class="badge bg-success">정상</span>
+                                        {% elif device.status == 'failed' %}
+                                            <span class="badge bg-danger">실패</span>
+                                        {% else %}
+                                            <span class="badge bg-warning">알 수 없음</span>
+                                        {% endif %}
                                     {% else %}
                                         <span class="badge bg-secondary">비활성</span>
                                     {% endif %}

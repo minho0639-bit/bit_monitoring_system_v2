@@ -1,0 +1,195 @@
+{% extends "base.html" %}
+
+{% block title %}로그 - Ping 모니터링 시스템{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-12">
+        <h1 class="mb-4">
+            <i class="fas fa-list-alt"></i> 전체 로그
+        </h1>
+    </div>
+</div>
+
+<div class="row">
+    <!-- Ping 로그 -->
+    <div class="col-lg-8">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="card-title mb-0">
+                    <i class="fas fa-network-wired"></i> Ping 로그
+                </h5>
+            </div>
+            <div class="card-body">
+                {% if ping_logs.items %}
+                    <div class="table-responsive">
+                        <table class="table table-hover table-sm">
+                            <thead>
+                                <tr>
+                                    <th>시간</th>
+                                    <th>장치</th>
+                                    <th>IP</th>
+                                    <th>상태</th>
+                                    <th>응답시간</th>
+                                    <th>오류</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for log in ping_logs.items %}
+                                <tr class="{{ 'table-success' if log.is_success else 'table-danger' }}">
+                                    <td>{{ log.timestamp.strftime('%m-%d %H:%M:%S') }}</td>
+                                    <td>{{ log.device.name }}</td>
+                                    <td><code>{{ log.device.ip_address }}</code></td>
+                                    <td>
+                                        {% if log.is_success %}
+                                            <i class="fas fa-check text-success"></i> 성공
+                                        {% else %}
+                                            <i class="fas fa-times text-danger"></i> 실패
+                                        {% endif %}
+                                    </td>
+                                    <td>
+                                        {% if log.response_time %}
+                                            {{ log.response_time }}ms
+                                        {% else %}
+                                            -
+                                        {% endif %}
+                                    </td>
+                                    <td>
+                                        {% if log.error_message %}
+                                            <small class="text-danger">{{ log.error_message[:50] }}{% if log.error_message|length > 50 %}...{% endif %}</small>
+                                        {% else %}
+                                            -
+                                        {% endif %}
+                                    </td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <!-- 페이지네이션 -->
+                    {% if ping_logs.pages > 1 %}
+                    <nav aria-label="로그 페이지네이션">
+                        <ul class="pagination justify-content-center">
+                            {% if ping_logs.has_prev %}
+                                <li class="page-item">
+                                    <a class="page-link" href="{{ url_for('logs', page=ping_logs.prev_num) }}">이전</a>
+                                </li>
+                            {% endif %}
+                            
+                            {% for page_num in ping_logs.iter_pages() %}
+                                {% if page_num %}
+                                    {% if page_num != ping_logs.page %}
+                                        <li class="page-item">
+                                            <a class="page-link" href="{{ url_for('logs', page=page_num) }}">{{ page_num }}</a>
+                                        </li>
+                                    {% else %}
+                                        <li class="page-item active">
+                                            <span class="page-link">{{ page_num }}</span>
+                                        </li>
+                                    {% endif %}
+                                {% else %}
+                                    <li class="page-item disabled">
+                                        <span class="page-link">...</span>
+                                    </li>
+                                {% endif %}
+                            {% endfor %}
+                            
+                            {% if ping_logs.has_next %}
+                                <li class="page-item">
+                                    <a class="page-link" href="{{ url_for('logs', page=ping_logs.next_num) }}">다음</a>
+                                </li>
+                            {% endif %}
+                        </ul>
+                    </nav>
+                    {% endif %}
+                {% else %}
+                    <div class="text-center py-5">
+                        <i class="fas fa-list fa-3x text-muted mb-3"></i>
+                        <h5 class="text-muted">로그가 없습니다</h5>
+                        <p class="text-muted">모니터링을 시작하면 로그가 표시됩니다.</p>
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+
+    <!-- 알림 로그 -->
+    <div class="col-lg-4">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="card-title mb-0">
+                    <i class="fas fa-bell"></i> 알림 로그
+                </h5>
+            </div>
+            <div class="card-body">
+                {% if alert_logs %}
+                    <div class="list-group list-group-flush">
+                        {% for alert in alert_logs %}
+                        <div class="list-group-item d-flex justify-content-between align-items-start">
+                            <div class="ms-2 me-auto">
+                                <div class="fw-bold">
+                                    {{ alert.device.name }}
+                                    <span class="badge bg-{{ 'danger' if alert.alert_type == 'ping_failed' else 'success' }} ms-1">
+                                        {{ '실패' if alert.alert_type == 'ping_failed' else '복구' }}
+                                    </span>
+                                </div>
+                                <small class="text-muted">{{ alert.message }}</small>
+                                <br><small class="text-muted">{{ alert.timestamp.strftime('%m-%d %H:%M') }}</small>
+                            </div>
+                            {% if alert.email_sent %}
+                                <i class="fas fa-envelope text-success" title="이메일 전송됨"></i>
+                            {% endif %}
+                        </div>
+                        {% endfor %}
+                    </div>
+                {% else %}
+                    <p class="text-muted text-center">알림 로그가 없습니다.</p>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 통계 정보 -->
+<div class="row mt-4">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header">
+                <h6 class="card-title mb-0">
+                    <i class="fas fa-chart-bar"></i> 로그 통계
+                </h6>
+            </div>
+            <div class="card-body">
+                <div class="row text-center">
+                    <div class="col-md-3">
+                        <h4 class="text-primary">{{ ping_logs.total }}</h4>
+                        <p class="text-muted">총 Ping 로그</p>
+                    </div>
+                    <div class="col-md-3">
+                        <h4 class="text-success">{{ ping_logs.items|selectattr('is_success')|list|length }}</h4>
+                        <p class="text-muted">성공한 Ping</p>
+                    </div>
+                    <div class="col-md-3">
+                        <h4 class="text-danger">{{ ping_logs.items|rejectattr('is_success')|list|length }}</h4>
+                        <p class="text-muted">실패한 Ping</p>
+                    </div>
+                    <div class="col-md-3">
+                        <h4 class="text-info">{{ alert_logs|length }}</h4>
+                        <p class="text-muted">알림 로그</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+// 자동 새로고침 (60초마다)
+setInterval(() => {
+    location.reload();
+}, 60000);
+</script>
+{% endblock %}

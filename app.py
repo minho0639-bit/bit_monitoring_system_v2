@@ -56,6 +56,8 @@ class Device(db.Model):
     ip_address = db.Column(db.String(45), nullable=False, unique=True)
     description = db.Column(db.Text)
     is_active = db.Column(db.Boolean, default=True)
+    status = db.Column(db.String(20), default='unknown')  # 'active', 'failed', 'unknown'
+    last_ping_time = db.Column(db.DateTime)
     created_at = db.Column(db.DateTime, default=lambda: datetime.now(timezone.utc))
     updated_at = db.Column(db.DateTime, default=lambda: datetime.now(timezone.utc), onupdate=lambda: datetime.now(timezone.utc))
     
@@ -79,21 +81,49 @@ class AlertLog(db.Model):
     timestamp = db.Column(db.DateTime, default=lambda: datetime.now(timezone.utc))
     email_sent = db.Column(db.Boolean, default=False)
 
+class EmailSettings(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    smtp_server = db.Column(db.String(100), nullable=False, default='smtp.gmail.com')
+    smtp_port = db.Column(db.Integer, nullable=False, default=587)
+    smtp_username = db.Column(db.String(100), nullable=False)
+    smtp_password = db.Column(db.String(100), nullable=False)
+    alert_email = db.Column(db.String(100), nullable=False)
+    is_enabled = db.Column(db.Boolean, default=True)
+    created_at = db.Column(db.DateTime, default=lambda: datetime.now(timezone.utc))
+    updated_at = db.Column(db.DateTime, default=lambda: datetime.now(timezone.utc), onupdate=lambda: datetime.now(timezone.utc))
+
 # 전역 변수
 monitoring_active = False
 monitoring_thread = None
 last_alert_time = {}  # 장치별 마지막 알림 시간
 
+def get_email_settings():
+    """이메일 설정을 데이터베이스에서 가져오기"""
+    settings = EmailSettings.query.first()
+    if not settings:
+        # 기본 설정 생성
+        settings = EmailSettings(
+            smtp_server=SMTP_SERVER,
+            smtp_port=SMTP_PORT,
+            smtp_username=SMTP_USERNAME,
+            smtp_password=SMTP_PASSWORD,
+            alert_email=ALERT_EMAIL
+        )
+        db.session.add(settings)
+        db.session.commit()
+    return settings
+
 def send_email_alert(device: Device, alert_type: str, message: str):
     """이메일 알림 전송"""
-    if not SMTP_USERNAME or not SMTP_PASSWORD or not ALERT_EMAIL:
-        logger.warning("이메일 설정이 완료되지 않았습니다.")
-        return False
-    
     try:
+        settings = get_email_settings()
+        if not settings.is_enabled or not settings.smtp_username or not settings.smtp_password or not settings.alert_email:
+            logger.warning("이메일 설정이 완료되지 않았습니다.")
+            return False
+    
         msg = MIMEMultipart()
-        msg['From'] = SMTP_USERNAME
-        msg['To'] = ALERT_EMAIL
+        msg['From'] = settings.smtp_username
+        msg['To'] = settings.alert_email
         msg['Subject'] = f"[모니터링 알림] {device.name} ({device.ip_address})"
         
         body = f"""
@@ -110,11 +140,11 @@ IP 주소: {device.ip_address}
         
         msg.attach(MIMEText(body, 'plain', 'utf-8'))
         
-        server = smtplib.SMTP(SMTP_SERVER, SMTP_PORT)
+        server = smtplib.SMTP(settings.smtp_server, settings.smtp_port)
         server.starttls()
-        server.login(SMTP_USERNAME, SMTP_PASSWORD)
+        server.login(settings.smtp_username, settings.smtp_password)
         text = msg.as_string()
-        server.sendmail(SMTP_USERNAME, ALERT_EMAIL, text)
+        server.sendmail(settings.smtp_username, settings.alert_email, text)
         server.quit()
         
         logger.info(f"이메일 알림 전송 완료: {device.name}")
@@ -271,6 +301,13 @@ def monitor_devices():
                 for device in active_devices:
                     ping_result = ping_device(device)
                     
+                    # 장치 상태 업데이트
+                    if ping_result['success']:
+                        device.status = 'active'
+                    else:
+                        device.status = 'failed'
+                    device.last_ping_time = datetime.now(timezone.utc)
+                    
                     # ping 로그 저장
                     ping_log = PingLog(
                         device_id=device.id,
@@ -405,6 +442,86 @@ def toggle_monitoring():
         flash('모니터링이 시작되었습니다.', 'success')
     
     return redirect(url_for('index'))
+
+@app.route('/logs')
+def logs():
+    """전체 로그 페이지"""
+    page = request.args.get('page', 1, type=int)
+    per_page = 50
+    
+    # ping 로그
+    ping_logs = PingLog.query.order_by(PingLog.timestamp.desc()).paginate(
+        page=page, per_page=per_page, error_out=False
+    )
+    
+    # 알림 로그
+    alert_logs = AlertLog.query.order_by(AlertLog.timestamp.desc()).limit(20).all()
+    
+    return render_template('logs.html', 
+                         ping_logs=ping_logs,
+                         alert_logs=alert_logs)
+
+@app.route('/email_settings', methods=['GET', 'POST'])
+def email_settings():
+    """이메일 설정 페이지"""
+    settings = get_email_settings()
+    
+    if request.method == 'POST':
+        settings.smtp_server = request.form['smtp_server']
+        settings.smtp_port = int(request.form['smtp_port'])
+        settings.smtp_username = request.form['smtp_username']
+        settings.smtp_password = request.form['smtp_password']
+        settings.alert_email = request.form['alert_email']
+        settings.is_enabled = 'is_enabled' in request.form
+        settings.updated_at = datetime.now(timezone.utc)
+        
+        db.session.commit()
+        flash('이메일 설정이 저장되었습니다.', 'success')
+        return redirect(url_for('email_settings'))
+    
+    return render_template('email_settings.html', settings=settings)
+
+@app.route('/api/test_email', methods=['POST'])
+def test_email():
+    """테스트 이메일 전송"""
+    try:
+        settings = get_email_settings()
+        if not settings.is_enabled:
+            return jsonify({'success': False, 'message': '이메일 알림이 비활성화되어 있습니다.'})
+        
+        # 테스트 이메일 전송
+        msg = MIMEMultipart()
+        msg['From'] = settings.smtp_username
+        msg['To'] = settings.alert_email
+        msg['Subject'] = '[테스트] Ping 모니터링 시스템 이메일 설정 확인'
+        
+        body = f"""
+이것은 Ping 모니터링 시스템의 테스트 이메일입니다.
+
+설정 정보:
+- SMTP 서버: {settings.smtp_server}:{settings.smtp_port}
+- 사용자명: {settings.smtp_username}
+- 알림 이메일: {settings.alert_email}
+- 전송 시간: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}
+
+이메일 설정이 정상적으로 작동합니다.
+
+Ping 모니터링 시스템
+        """
+        
+        msg.attach(MIMEText(body, 'plain', 'utf-8'))
+        
+        server = smtplib.SMTP(settings.smtp_server, settings.smtp_port)
+        server.starttls()
+        server.login(settings.smtp_username, settings.smtp_password)
+        text = msg.as_string()
+        server.sendmail(settings.smtp_username, settings.alert_email, text)
+        server.quit()
+        
+        return jsonify({'success': True, 'message': '테스트 이메일이 전송되었습니다.'})
+        
+    except Exception as e:
+        return jsonify({'success': False, 'message': f'이메일 전송 실패: {str(e)}'})
 
 @app.route('/api/device_status/<int:device_id>')
 def device_status(device_id):

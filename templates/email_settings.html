@@ -1,0 +1,167 @@
+{% extends "base.html" %}
+
+{% block title %}이메일 설정 - Ping 모니터링 시스템{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-8">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="card-title mb-0">
+                    <i class="fas fa-envelope"></i> 이메일 알림 설정
+                </h5>
+            </div>
+            <div class="card-body">
+                <form method="POST">
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="is_enabled" name="is_enabled" 
+                               {{ 'checked' if settings.is_enabled else '' }}>
+                        <label class="form-check-label" for="is_enabled">
+                            이메일 알림 활성화
+                        </label>
+                        <div class="form-text">체크하면 ping 실패/복구 시 이메일 알림을 전송합니다.</div>
+                    </div>
+
+                    <hr>
+
+                    <h6 class="mb-3">SMTP 서버 설정</h6>
+                    
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="mb-3">
+                                <label for="smtp_server" class="form-label">SMTP 서버 <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" id="smtp_server" name="smtp_server" 
+                                       value="{{ settings.smtp_server }}" required>
+                                <div class="form-text">예: smtp.gmail.com, smtp.naver.com</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="mb-3">
+                                <label for="smtp_port" class="form-label">포트 <span class="text-danger">*</span></label>
+                                <input type="number" class="form-control" id="smtp_port" name="smtp_port" 
+                                       value="{{ settings.smtp_port }}" required>
+                                <div class="form-text">일반적으로 587 (TLS)</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="smtp_username" class="form-label">사용자명 (이메일 주소) <span class="text-danger">*</span></label>
+                        <input type="email" class="form-control" id="smtp_username" name="smtp_username" 
+                               value="{{ settings.smtp_username }}" required>
+                        <div class="form-text">Gmail의 경우 앱 비밀번호를 사용하세요.</div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="smtp_password" class="form-label">비밀번호 <span class="text-danger">*</span></label>
+                        <input type="password" class="form-control" id="smtp_password" name="smtp_password" 
+                               value="{{ settings.smtp_password }}" required>
+                        <div class="form-text">Gmail의 경우 일반 비밀번호가 아닌 앱 비밀번호를 사용하세요.</div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="alert_email" class="form-label">알림 수신 이메일 <span class="text-danger">*</span></label>
+                        <input type="email" class="form-control" id="alert_email" name="alert_email" 
+                               value="{{ settings.alert_email }}" required>
+                        <div class="form-text">ping 실패/복구 알림을 받을 이메일 주소</div>
+                    </div>
+
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                        <button type="button" class="btn btn-outline-secondary me-md-2" onclick="testEmail()">
+                            <i class="fas fa-paper-plane"></i> 테스트 이메일 전송
+                        </button>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-save"></i> 설정 저장
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- 도움말 -->
+        <div class="card mt-4">
+            <div class="card-header">
+                <h6 class="card-title mb-0">
+                    <i class="fas fa-info-circle"></i> 도움말
+                </h6>
+            </div>
+            <div class="card-body">
+                <h6>Gmail 설정</h6>
+                <ul class="mb-3">
+                    <li><strong>SMTP 서버:</strong> smtp.gmail.com</li>
+                    <li><strong>포트:</strong> 587</li>
+                    <li><strong>사용자명:</strong> Gmail 주소</li>
+                    <li><strong>비밀번호:</strong> 앱 비밀번호 (2단계 인증 필요)</li>
+                </ul>
+                
+                <h6>Naver 설정</h6>
+                <ul class="mb-3">
+                    <li><strong>SMTP 서버:</strong> smtp.naver.com</li>
+                    <li><strong>포트:</strong> 587</li>
+                    <li><strong>사용자명:</strong> Naver 이메일 주소</li>
+                    <li><strong>비밀번호:</strong> Naver 비밀번호</li>
+                </ul>
+                
+                <h6>알림 조건</h6>
+                <p class="mb-0">ping이 실패하면 5분 후에 이메일 알림을 전송하고, ping이 복구되면 즉시 복구 알림을 전송합니다.</p>
+            </div>
+        </div>
+
+        <!-- 현재 설정 정보 -->
+        <div class="card mt-4">
+            <div class="card-header">
+                <h6 class="card-title mb-0">
+                    <i class="fas fa-cog"></i> 현재 설정 정보
+                </h6>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p><strong>상태:</strong> 
+                            <span class="badge bg-{{ 'success' if settings.is_enabled else 'secondary' }}">
+                                {{ '활성화' if settings.is_enabled else '비활성화' }}
+                            </span>
+                        </p>
+                        <p><strong>SMTP 서버:</strong> {{ settings.smtp_server }}</p>
+                        <p><strong>포트:</strong> {{ settings.smtp_port }}</p>
+                    </div>
+                    <div class="col-md-6">
+                        <p><strong>사용자명:</strong> {{ settings.smtp_username }}</p>
+                        <p><strong>알림 이메일:</strong> {{ settings.alert_email }}</p>
+                        <p><strong>마지막 업데이트:</strong> {{ settings.updated_at.strftime('%Y-%m-%d %H:%M:%S') }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+function testEmail() {
+    if (!confirm('테스트 이메일을 전송하시겠습니까?')) {
+        return;
+    }
+    
+    // 간단한 테스트 이메일 전송 요청
+    fetch('/api/test_email', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        }
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            alert('테스트 이메일이 전송되었습니다.');
+        } else {
+            alert('테스트 이메일 전송에 실패했습니다: ' + data.message);
+        }
+    })
+    .catch(error => {
+        alert('오류가 발생했습니다: ' + error);
+    });
+}
+</script>
+{% endblock %}

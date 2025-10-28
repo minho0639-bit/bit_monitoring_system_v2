@@ -2033,3 +2033,213 @@ with app.app_context(). See the documentation for more information.
 2025-10-28 08:15:38,288 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
 2025-10-28 08:15:39,054 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
 2025-10-28 08:15:39,185 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:16:04,614 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 08:16:10,345 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:16:10,349 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:16:11,123 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:16:11,250 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:16:27,121 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 08:16:27,233 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 08:16:27,247 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 08:16:27,256 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 08:16:27,383 - INFO -  * Restarting with stat
+2025-10-28 08:16:27,441 - INFO -  * Restarting with stat
+2025-10-28 08:16:27,629 - INFO -  * Restarting with stat
+2025-10-28 08:16:27,655 - INFO -  * Restarting with stat
+2025-10-28 08:16:28,074 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 08:16:28,081 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 08:16:28,089 - WARNING -  * Debugger is active!
+2025-10-28 08:16:28,092 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 08:16:28,101 - ERROR - 모니터링 중 오류 발생: (sqlite3.OperationalError) no such column: device.status
+[SQL: SELECT device.id AS device_id, device.name AS device_name, device.ip_address AS device_ip_address, device.description AS device_description, device.is_active AS device_is_active, device.status AS device_status, device.last_ping_time AS device_last_ping_time, device.created_at AS device_created_at, device.updated_at AS device_updated_at 
+FROM device 
+WHERE device.is_active = 1]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-10-28 08:16:28,218 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 08:16:28,225 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 08:16:28,240 - ERROR - 모니터링 중 오류 발생: (sqlite3.OperationalError) no such column: device.status
+[SQL: SELECT device.id AS device_id, device.name AS device_name, device.ip_address AS device_ip_address, device.description AS device_description, device.is_active AS device_is_active, device.status AS device_status, device.last_ping_time AS device_last_ping_time, device.created_at AS device_created_at, device.updated_at AS device_updated_at 
+FROM device 
+WHERE device.is_active = 1]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-10-28 08:16:28,246 - WARNING -  * Debugger is active!
+2025-10-28 08:16:28,250 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 08:16:28,388 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 08:16:28,402 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 08:16:28,410 - ERROR - 모니터링 중 오류 발생: (sqlite3.OperationalError) no such column: device.status
+[SQL: SELECT device.id AS device_id, device.name AS device_name, device.ip_address AS device_ip_address, device.description AS device_description, device.is_active AS device_is_active, device.status AS device_status, device.last_ping_time AS device_last_ping_time, device.created_at AS device_created_at, device.updated_at AS device_updated_at 
+FROM device 
+WHERE device.is_active = 1]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-10-28 08:16:28,431 - WARNING -  * Debugger is active!
+2025-10-28 08:16:28,432 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 08:16:28,435 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 08:16:28,443 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 08:16:28,467 - ERROR - 모니터링 중 오류 발생: (sqlite3.OperationalError) no such column: device.status
+[SQL: SELECT device.id AS device_id, device.name AS device_name, device.ip_address AS device_ip_address, device.description AS device_description, device.is_active AS device_is_active, device.status AS device_status, device.last_ping_time AS device_last_ping_time, device.created_at AS device_created_at, device.updated_at AS device_updated_at 
+FROM device 
+WHERE device.is_active = 1]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-10-28 08:16:28,472 - WARNING -  * Debugger is active!
+2025-10-28 08:16:28,473 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 08:16:34,615 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 08:16:35,624 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 08:16:35,665 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 08:16:35,928 - INFO -  * Restarting with stat
+2025-10-28 08:16:35,949 - INFO -  * Restarting with stat
+2025-10-28 08:16:36,312 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 08:16:36,461 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 08:16:36,669 - INFO -  * Restarting with stat
+2025-10-28 08:16:36,863 - INFO -  * Restarting with stat
+2025-10-28 08:16:36,971 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 08:16:36,977 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 08:16:37,003 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 08:16:37,009 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 08:16:37,028 - WARNING -  * Debugger is active!
+2025-10-28 08:16:37,029 - ERROR - 모니터링 중 오류 발생: (sqlite3.OperationalError) no such column: device.status
+[SQL: SELECT device.id AS device_id, device.name AS device_name, device.ip_address AS device_ip_address, device.description AS device_description, device.is_active AS device_is_active, device.status AS device_status, device.last_ping_time AS device_last_ping_time, device.created_at AS device_created_at, device.updated_at AS device_updated_at 
+FROM device 
+WHERE device.is_active = 1]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-10-28 08:16:37,029 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 08:16:37,035 - WARNING -  * Debugger is active!
+2025-10-28 08:16:37,036 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 08:16:37,076 - ERROR - 모니터링 중 오류 발생: (sqlite3.OperationalError) no such column: device.status
+[SQL: SELECT device.id AS device_id, device.name AS device_name, device.ip_address AS device_ip_address, device.description AS device_description, device.is_active AS device_is_active, device.status AS device_status, device.last_ping_time AS device_last_ping_time, device.created_at AS device_created_at, device.updated_at AS device_updated_at 
+FROM device 
+WHERE device.is_active = 1]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-10-28 08:16:37,644 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 08:16:37,650 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 08:16:37,683 - ERROR - 모니터링 중 오류 발생: (sqlite3.OperationalError) no such column: device.status
+[SQL: SELECT device.id AS device_id, device.name AS device_name, device.ip_address AS device_ip_address, device.description AS device_description, device.is_active AS device_is_active, device.status AS device_status, device.last_ping_time AS device_last_ping_time, device.created_at AS device_created_at, device.updated_at AS device_updated_at 
+FROM device 
+WHERE device.is_active = 1]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-10-28 08:16:37,686 - WARNING -  * Debugger is active!
+2025-10-28 08:16:37,686 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 08:16:37,726 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 08:16:37,735 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 08:16:37,756 - ERROR - 모니터링 중 오류 발생: (sqlite3.OperationalError) no such column: device.status
+[SQL: SELECT device.id AS device_id, device.name AS device_name, device.ip_address AS device_ip_address, device.description AS device_description, device.is_active AS device_is_active, device.status AS device_status, device.last_ping_time AS device_last_ping_time, device.created_at AS device_created_at, device.updated_at AS device_updated_at 
+FROM device 
+WHERE device.is_active = 1]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-10-28 08:16:37,775 - WARNING -  * Debugger is active!
+2025-10-28 08:16:37,775 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 08:16:43,869 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 08:16:43,938 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 08:16:44,168 - INFO -  * Restarting with stat
+2025-10-28 08:16:44,230 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 08:16:44,237 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 08:16:44,260 - INFO -  * Restarting with stat
+2025-10-28 08:16:44,442 - INFO -  * Restarting with stat
+2025-10-28 08:16:44,467 - INFO -  * Restarting with stat
+2025-10-28 08:16:44,803 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 08:16:44,816 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 08:16:44,838 - WARNING -  * Debugger is active!
+2025-10-28 08:16:44,861 - ERROR - 모니터링 중 오류 발생: (sqlite3.OperationalError) no such column: device.status
+[SQL: SELECT device.id AS device_id, device.name AS device_name, device.ip_address AS device_ip_address, device.description AS device_description, device.is_active AS device_is_active, device.status AS device_status, device.last_ping_time AS device_last_ping_time, device.created_at AS device_created_at, device.updated_at AS device_updated_at 
+FROM device 
+WHERE device.is_active = 1]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-10-28 08:16:44,862 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 08:16:44,977 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 08:16:44,989 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 08:16:45,015 - ERROR - 모니터링 중 오류 발생: (sqlite3.OperationalError) no such column: device.status
+[SQL: SELECT device.id AS device_id, device.name AS device_name, device.ip_address AS device_ip_address, device.description AS device_description, device.is_active AS device_is_active, device.status AS device_status, device.last_ping_time AS device_last_ping_time, device.created_at AS device_created_at, device.updated_at AS device_updated_at 
+FROM device 
+WHERE device.is_active = 1]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-10-28 08:16:45,023 - WARNING -  * Debugger is active!
+2025-10-28 08:16:45,023 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 08:16:45,065 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 08:16:45,071 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 08:16:45,083 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 08:16:45,093 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 08:16:45,110 - ERROR - 모니터링 중 오류 발생: (sqlite3.OperationalError) no such column: device.status
+[SQL: SELECT device.id AS device_id, device.name AS device_name, device.ip_address AS device_ip_address, device.description AS device_description, device.is_active AS device_is_active, device.status AS device_status, device.last_ping_time AS device_last_ping_time, device.created_at AS device_created_at, device.updated_at AS device_updated_at 
+FROM device 
+WHERE device.is_active = 1]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-10-28 08:16:45,115 - ERROR - 모니터링 중 오류 발생: (sqlite3.OperationalError) no such column: device.status
+[SQL: SELECT device.id AS device_id, device.name AS device_name, device.ip_address AS device_ip_address, device.description AS device_description, device.is_active AS device_is_active, device.status AS device_status, device.last_ping_time AS device_last_ping_time, device.created_at AS device_created_at, device.updated_at AS device_updated_at 
+FROM device 
+WHERE device.is_active = 1]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-10-28 08:16:45,122 - WARNING -  * Debugger is active!
+2025-10-28 08:16:45,123 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 08:16:45,127 - WARNING -  * Debugger is active!
+2025-10-28 08:16:45,127 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 08:16:51,045 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 08:16:51,215 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 08:16:51,296 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 08:16:51,300 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 08:16:51,328 - INFO -  * Restarting with stat
+2025-10-28 08:16:51,385 - INFO -  * Restarting with stat
+2025-10-28 08:16:51,474 - INFO -  * Restarting with stat
+2025-10-28 08:16:51,641 - INFO -  * Restarting with stat
+2025-10-28 08:20:00,463 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 08:20:00,474 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 08:20:00,487 - ERROR - 모니터링 중 오류 발생: (sqlite3.OperationalError) no such column: device.status
+[SQL: SELECT device.id AS device_id, device.name AS device_name, device.ip_address AS device_ip_address, device.description AS device_description, device.is_active AS device_is_active, device.status AS device_status, device.last_ping_time AS device_last_ping_time, device.created_at AS device_created_at, device.updated_at AS device_updated_at 
+FROM device 
+WHERE device.is_active = 1]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-10-28 08:20:00,496 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://172.30.0.2:8000
+2025-10-28 08:20:00,498 - INFO - [33mPress CTRL+C to quit[0m
+2025-10-28 08:20:00,500 - INFO -  * Restarting with stat
+2025-10-28 08:20:01,118 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 08:20:01,127 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 08:20:01,152 - ERROR - 모니터링 중 오류 발생: (sqlite3.OperationalError) no such column: device.status
+[SQL: SELECT device.id AS device_id, device.name AS device_name, device.ip_address AS device_ip_address, device.description AS device_description, device.is_active AS device_is_active, device.status AS device_status, device.last_ping_time AS device_last_ping_time, device.created_at AS device_created_at, device.updated_at AS device_updated_at 
+FROM device 
+WHERE device.is_active = 1]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-10-28 08:20:01,163 - WARNING -  * Debugger is active!
+2025-10-28 08:20:01,164 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 08:20:45,843 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 08:20:45,853 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 08:20:45,878 - ERROR - 모니터링 중 오류 발생: (sqlite3.OperationalError) no such column: device.status
+[SQL: SELECT device.id AS device_id, device.name AS device_name, device.ip_address AS device_ip_address, device.description AS device_description, device.is_active AS device_is_active, device.status AS device_status, device.last_ping_time AS device_last_ping_time, device.created_at AS device_created_at, device.updated_at AS device_updated_at 
+FROM device 
+WHERE device.is_active = 1]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-10-28 08:20:45,895 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://172.30.0.2:8000
+2025-10-28 08:20:45,895 - INFO - [33mPress CTRL+C to quit[0m
+2025-10-28 08:20:45,901 - INFO -  * Restarting with stat
+2025-10-28 08:20:46,490 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 08:20:46,500 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 08:20:46,523 - ERROR - 모니터링 중 오류 발생: (sqlite3.OperationalError) no such column: device.status
+[SQL: SELECT device.id AS device_id, device.name AS device_name, device.ip_address AS device_ip_address, device.description AS device_description, device.is_active AS device_is_active, device.status AS device_status, device.last_ping_time AS device_last_ping_time, device.created_at AS device_created_at, device.updated_at AS device_updated_at 
+FROM device 
+WHERE device.is_active = 1]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-10-28 08:20:46,526 - WARNING -  * Debugger is active!
+2025-10-28 08:20:46,526 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 08:23:01,837 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 08:23:01,846 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 08:23:01,887 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://172.30.0.2:8000
+2025-10-28 08:23:01,888 - INFO - [33mPress CTRL+C to quit[0m
+2025-10-28 08:23:01,889 - INFO -  * Restarting with stat
+2025-10-28 08:23:02,503 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 08:23:02,512 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 08:23:02,547 - WARNING -  * Debugger is active!
+2025-10-28 08:23:02,547 - INFO -  * Debugger PIN: 474-574-673
