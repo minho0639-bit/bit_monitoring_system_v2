@@ -11,6 +11,8 @@ import time
 import threading
 import smtplib
 import logging
+import subprocess
+import re
 from datetime import datetime, timedelta
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
@@ -18,7 +20,6 @@ from typing import List, Dict, Optional
 
 from flask import Flask, render_template, request, jsonify, redirect, url_for, flash
 from flask_sqlalchemy import SQLAlchemy
-from ping3 import ping
 import schedule
 
 # Flask 앱 초기화
@@ -123,30 +124,91 @@ IP 주소: {device.ip_address}
         return False
 
 def ping_device(device: Device) -> Dict:
-    """단일 장치에 ping 테스트 수행"""
+    """단일 장치에 ping 테스트 수행 (실제 Linux ping 명령어 사용)"""
     try:
+        # ping 명령어 실행 (3번 시도, 5초 타임아웃)
+        # sudo 없이 시도하고, 실패하면 sudo로 재시도
+        cmd = ['ping', '-c', '3', '-W', '5', device.ip_address]
+        
         start_time = time.time()
-        response = ping(device.ip_address, timeout=5)
+        result = subprocess.run(cmd, capture_output=True, text=True, timeout=10)
         end_time = time.time()
         
-        if response is not None:
-            response_time = (end_time - start_time) * 1000  # ms로 변환
+        # 권한 오류가 발생하면 sudo로 재시도
+        if result.returncode == 2 and "Operation not permitted" in result.stderr:
+            logger.info(f"권한 오류로 인해 sudo로 재시도: {device.ip_address}")
+            cmd = ['sudo', 'ping', '-c', '3', '-W', '5', device.ip_address]
+            result = subprocess.run(cmd, capture_output=True, text=True, timeout=10)
+        
+        # ping 결과 파싱
+        output = result.stdout
+        error_output = result.stderr
+        
+        # 성공 패턴: "64 bytes from IP: icmp_seq=1 ttl=64 time=0.028 ms"
+        success_pattern = r'(\d+) bytes from .*: icmp_seq=\d+ ttl=\d+ time=([\d.]+) ms'
+        success_matches = re.findall(success_pattern, output)
+        
+        # 실패 패턴들
+        failure_patterns = [
+            r'Destination Host Unreachable',
+            r'Network is unreachable',
+            r'No route to host',
+            r'Request timeout',
+            r'Name or service not known',
+            r'ping: .*: Temporary failure in name resolution'
+        ]
+        
+        # 실패 메시지 확인
+        failure_message = None
+        for pattern in failure_patterns:
+            if re.search(pattern, output) or re.search(pattern, error_output):
+                failure_message = re.search(pattern, output + error_output).group()
+                break
+        
+        if success_matches and not failure_message:
+            # 성공한 경우 - 평균 응답시간 계산
+            response_times = [float(match[1]) for match in success_matches]
+            avg_response_time = sum(response_times) / len(response_times)
+            
             return {
                 'success': True,
-                'response_time': round(response_time, 2),
-                'error': None
+                'response_time': round(avg_response_time, 2),
+                'error': None,
+                'raw_output': output
             }
         else:
+            # 실패한 경우
+            error_msg = failure_message or "No response received"
+            if result.returncode != 0:
+                error_msg = f"Ping failed (exit code: {result.returncode})"
+            
             return {
                 'success': False,
                 'response_time': None,
-                'error': 'Timeout or no response'
+                'error': error_msg,
+                'raw_output': output + error_output
             }
+            
+    except subprocess.TimeoutExpired:
+        return {
+            'success': False,
+            'response_time': None,
+            'error': 'Ping timeout (10 seconds)',
+            'raw_output': ''
+        }
+    except FileNotFoundError:
+        return {
+            'success': False,
+            'response_time': None,
+            'error': 'Ping command not found. Please install ping utility.',
+            'raw_output': ''
+        }
     except Exception as e:
         return {
             'success': False,
             'response_time': None,
-            'error': str(e)
+            'error': f'Unexpected error: {str(e)}',
+            'raw_output': ''
         }
 
 def check_device_status(device: Device, ping_result: Dict):

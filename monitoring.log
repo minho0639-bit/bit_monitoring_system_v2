@@ -877,3 +877,193 @@ with app.app_context(). See the documentation for more information.
 This typically means that you attempted to use functionality that needed
 the current application. To solve this, set up an application context
 with app.app_context(). See the documentation for more information.
+2025-10-28 07:44:34,552 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:44:47,386 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 07:44:47,391 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 07:44:47,393 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 07:44:47,558 - INFO -  * Restarting with stat
+2025-10-28 07:44:47,560 - INFO -  * Restarting with stat
+2025-10-28 07:44:47,792 - INFO -  * Restarting with stat
+2025-10-28 07:44:47,864 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 07:44:48,082 - INFO -  * Restarting with stat
+2025-10-28 07:44:48,427 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:44:48,454 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:44:48,462 - WARNING -  * Debugger is active!
+2025-10-28 07:44:48,463 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 07:44:48,532 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:44:48,544 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:44:48,577 - WARNING -  * Debugger is active!
+2025-10-28 07:44:48,578 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 07:44:48,703 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:44:48,714 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:44:48,745 - WARNING -  * Debugger is active!
+2025-10-28 07:44:48,746 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 07:44:48,857 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:44:48,864 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:44:48,901 - WARNING -  * Debugger is active!
+2025-10-28 07:44:48,902 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 07:45:02,065 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 07:45:02,220 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 07:45:02,335 - INFO -  * Restarting with stat
+2025-10-28 07:45:02,554 - INFO -  * Restarting with stat
+2025-10-28 07:45:02,799 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 07:45:02,897 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 07:45:02,993 - INFO -  * Restarting with stat
+2025-10-28 07:45:03,025 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:45:03,050 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:45:03,065 - INFO -  * Restarting with stat
+2025-10-28 07:45:03,065 - WARNING -  * Debugger is active!
+2025-10-28 07:45:03,078 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 07:45:03,208 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:45:03,222 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:45:03,240 - WARNING -  * Debugger is active!
+2025-10-28 07:45:03,241 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 07:45:03,786 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:45:03,795 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:45:03,815 - WARNING -  * Debugger is active!
+2025-10-28 07:45:03,821 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 07:45:03,875 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:45:03,883 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:45:03,912 - WARNING -  * Debugger is active!
+2025-10-28 07:45:03,913 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 07:45:04,553 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:45:34,554 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:46:04,560 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:46:24,525 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 07:46:24,621 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 07:46:24,752 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 07:46:24,772 - INFO -  * Restarting with stat
+2025-10-28 07:46:24,910 - INFO -  * Restarting with stat
+2025-10-28 07:46:24,963 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 07:46:24,975 - INFO -  * Restarting with stat
+2025-10-28 07:46:25,102 - INFO -  * Restarting with stat
+2025-10-28 07:46:25,273 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:46:25,279 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:46:25,287 - WARNING -  * Debugger is active!
+2025-10-28 07:46:25,288 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 07:46:25,656 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:46:25,671 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:46:25,692 - WARNING -  * Debugger is active!
+2025-10-28 07:46:25,695 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:46:25,696 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 07:46:25,706 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:46:25,738 - WARNING -  * Debugger is active!
+2025-10-28 07:46:25,739 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 07:46:25,826 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:46:25,834 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:46:25,868 - WARNING -  * Debugger is active!
+2025-10-28 07:46:25,869 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 07:46:34,560 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:46:37,986 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 07:46:38,027 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 07:46:38,119 - INFO -  * Restarting with stat
+2025-10-28 07:46:38,145 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 07:46:38,315 - INFO -  * Restarting with stat
+2025-10-28 07:46:38,381 - INFO -  * Restarting with stat
+2025-10-28 07:46:38,600 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 07:46:38,741 - INFO -  * Restarting with stat
+2025-10-28 07:46:38,827 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:46:38,834 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:46:38,844 - WARNING -  * Debugger is active!
+2025-10-28 07:46:38,851 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 07:46:39,053 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:46:39,062 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:46:39,091 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:46:39,095 - WARNING -  * Debugger is active!
+2025-10-28 07:46:39,096 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 07:46:39,102 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:46:39,126 - WARNING -  * Debugger is active!
+2025-10-28 07:46:39,126 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 07:46:39,285 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:46:39,299 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:46:39,318 - WARNING -  * Debugger is active!
+2025-10-28 07:46:39,319 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 07:46:43,981 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 07:46:44,243 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 07:46:44,270 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 07:46:44,295 - INFO -  * Restarting with stat
+2025-10-28 07:46:44,436 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 07:46:44,466 - INFO -  * Restarting with stat
+2025-10-28 07:46:44,470 - INFO -  * Restarting with stat
+2025-10-28 07:46:44,583 - INFO -  * Restarting with stat
+2025-10-28 07:46:44,964 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:46:44,970 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:46:44,979 - WARNING -  * Debugger is active!
+2025-10-28 07:46:44,980 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 07:46:44,985 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:46:44,992 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:46:45,005 - WARNING -  * Debugger is active!
+2025-10-28 07:46:45,007 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 07:46:45,053 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:46:45,063 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:46:45,081 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:46:45,085 - WARNING -  * Debugger is active!
+2025-10-28 07:46:45,085 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 07:46:45,087 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:46:45,110 - WARNING -  * Debugger is active!
+2025-10-28 07:46:45,110 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 07:46:48,534 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:46:48,546 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:46:48,583 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://172.30.0.2:8000
+2025-10-28 07:46:48,583 - INFO - [33mPress CTRL+C to quit[0m
+2025-10-28 07:46:48,589 - INFO -  * Restarting with stat
+2025-10-28 07:46:49,499 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:46:49,511 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:46:49,530 - WARNING -  * Debugger is active!
+2025-10-28 07:46:49,531 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 07:47:04,561 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:47:24,335 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:47:26,387 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:47:28,469 - INFO - 권한 오류로 인해 sudo로 재시도: 192.168.999.999
+2025-10-28 07:47:28,856 - WARNING - 이메일 설정이 완료되지 않았습니다.
+2025-10-28 07:47:28,886 - WARNING - 장치 테스트 장치 ping 실패: [Errno 13] Permission denied
+2025-10-28 07:47:28,891 - WARNING - 이메일 설정이 완료되지 않았습니다.
+2025-10-28 07:47:28,902 - WARNING - 장치 로컬호스트 ping 실패: [Errno 13] Permission denied
+2025-10-28 07:47:30,061 - WARNING - 이메일 설정이 완료되지 않았습니다.
+2025-10-28 07:47:30,091 - WARNING - 장치 테스트 장치 ping 실패: [Errno 13] Permission denied
+2025-10-28 07:47:30,096 - WARNING - 이메일 설정이 완료되지 않았습니다.
+2025-10-28 07:47:30,105 - WARNING - 장치 로컬호스트 ping 실패: [Errno 13] Permission denied
+2025-10-28 07:47:34,562 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:47:37,994 - WARNING - 이메일 설정이 완료되지 않았습니다.
+2025-10-28 07:47:38,031 - WARNING - 장치 테스트 장치 ping 실패: [Errno 13] Permission denied
+2025-10-28 07:47:38,037 - WARNING - 이메일 설정이 완료되지 않았습니다.
+2025-10-28 07:47:38,043 - WARNING - 장치 로컬호스트 ping 실패: [Errno 13] Permission denied
+2025-10-28 07:47:45,002 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:47:45,026 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:47:45,087 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:47:45,125 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:47:47,047 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:47:47,060 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:47:47,122 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:47:47,162 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
