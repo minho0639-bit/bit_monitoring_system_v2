@@ -1682,3 +1682,112 @@ with app.app_context(). See the documentation for more information.
 2025-10-28 08:01:17,933 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
 2025-10-28 08:01:18,012 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
 2025-10-28 08:01:18,108 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:01:32,252 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 08:01:32,253 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 08:01:32,261 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 08:01:32,398 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 08:01:32,504 - INFO -  * Restarting with stat
+2025-10-28 08:01:32,548 - INFO -  * Restarting with stat
+2025-10-28 08:01:32,576 - INFO -  * Restarting with stat
+2025-10-28 08:01:32,653 - INFO -  * Restarting with stat
+2025-10-28 08:01:33,229 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 08:01:33,235 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 08:01:33,244 - WARNING -  * Debugger is active!
+2025-10-28 08:01:33,245 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 08:01:33,254 - ERROR - 모니터링 중 오류 발생: Error creating backref 'device' on relationship 'Device.alert_logs': property of that name exists on mapper 'Mapper[AlertLog(alert_log)]'
+2025-10-28 08:01:33,283 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 08:01:33,292 - ERROR - 모니터링 중 오류 발생: Error creating backref 'device' on relationship 'Device.alert_logs': property of that name exists on mapper 'Mapper[AlertLog(alert_log)]'
+2025-10-28 08:01:33,292 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 08:01:33,312 - WARNING -  * Debugger is active!
+2025-10-28 08:01:33,317 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 08:01:33,584 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 08:01:33,590 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 08:01:33,602 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 08:01:33,593 - ERROR - 모니터링 중 오류 발생: Error creating backref 'device' on relationship 'Device.alert_logs': property of that name exists on mapper 'Mapper[AlertLog(alert_log)]'
+2025-10-28 08:01:33,611 - ERROR - 모니터링 중 오류 발생: Error creating backref 'device' on relationship 'Device.alert_logs': property of that name exists on mapper 'Mapper[AlertLog(alert_log)]'
+2025-10-28 08:01:33,611 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 08:01:33,615 - WARNING -  * Debugger is active!
+2025-10-28 08:01:33,616 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 08:01:33,628 - WARNING -  * Debugger is active!
+2025-10-28 08:01:33,629 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 08:01:34,588 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 08:01:39,770 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 08:01:39,771 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 08:01:39,919 - INFO -  * Restarting with stat
+2025-10-28 08:01:40,087 - INFO -  * Restarting with stat
+2025-10-28 08:01:40,421 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 08:01:40,508 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 08:01:40,628 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 08:01:40,633 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 08:01:40,642 - WARNING -  * Debugger is active!
+2025-10-28 08:01:40,643 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 08:01:40,653 - INFO -  * Restarting with stat
+2025-10-28 08:01:40,656 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 08:01:40,657 - INFO -  * Restarting with stat
+2025-10-28 08:01:40,729 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 08:01:40,740 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 08:01:40,769 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 08:01:40,774 - WARNING -  * Debugger is active!
+2025-10-28 08:01:40,775 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 08:01:41,563 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 08:01:41,573 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 08:01:41,578 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 08:01:41,590 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 08:01:41,600 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 08:01:41,602 - WARNING -  * Debugger is active!
+2025-10-28 08:01:41,602 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 08:01:41,632 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 08:01:41,633 - WARNING -  * Debugger is active!
+2025-10-28 08:01:41,634 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 08:01:42,709 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:01:42,808 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:01:43,638 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:01:43,659 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:01:54,987 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 08:01:54,996 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 08:01:55,020 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 08:01:55,030 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://172.30.0.2:8000
+2025-10-28 08:01:55,030 - INFO - [33mPress CTRL+C to quit[0m
+2025-10-28 08:01:55,035 - INFO -  * Restarting with stat
+2025-10-28 08:01:55,915 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 08:01:55,924 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 08:01:55,952 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 08:01:55,959 - WARNING -  * Debugger is active!
+2025-10-28 08:01:55,961 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 08:01:57,055 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:01:57,991 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:02:04,589 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 08:02:14,783 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 08:02:14,872 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 08:02:15,716 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 08:02:15,739 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 08:02:16,817 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:02:16,904 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:02:17,755 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:02:17,770 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:02:29,264 - WARNING - 이메일 설정이 완료되지 않았습니다.
+2025-10-28 08:02:29,273 - WARNING - 장치 테스트 장치 ping 실패: [Errno 13] Permission denied
+2025-10-28 08:02:29,276 - WARNING - 이메일 설정이 완료되지 않았습니다.
+2025-10-28 08:02:29,284 - WARNING - 장치 로컬호스트 ping 실패: [Errno 13] Permission denied
+2025-10-28 08:02:30,441 - WARNING - 이메일 설정이 완료되지 않았습니다.
+2025-10-28 08:02:30,448 - WARNING - 장치 테스트 장치 ping 실패: [Errno 13] Permission denied
+2025-10-28 08:02:30,452 - WARNING - 이메일 설정이 완료되지 않았습니다.
+2025-10-28 08:02:30,455 - WARNING - 장치 로컬호스트 ping 실패: [Errno 13] Permission denied
+2025-10-28 08:02:34,589 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 08:02:38,435 - WARNING - 이메일 설정이 완료되지 않았습니다.
+2025-10-28 08:02:38,445 - WARNING - 장치 로컬호스트 ping 실패: [Errno 13] Permission denied

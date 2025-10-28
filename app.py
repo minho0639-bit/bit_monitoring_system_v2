@@ -61,6 +61,7 @@ class Device(db.Model):
     
     # 관계 설정
     ping_logs = db.relationship('PingLog', backref='device', lazy=True, cascade='all, delete-orphan')
+    alert_logs = db.relationship('AlertLog', backref='device', lazy=True, cascade='all, delete-orphan')
 
 class PingLog(db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -77,9 +78,6 @@ class AlertLog(db.Model):
     message = db.Column(db.Text, nullable=False)
     timestamp = db.Column(db.DateTime, default=lambda: datetime.now(timezone.utc))
     email_sent = db.Column(db.Boolean, default=False)
-    
-    # 관계 설정
-    device = db.relationship('Device', backref='alert_logs')
 
 # 전역 변수
 monitoring_active = False
