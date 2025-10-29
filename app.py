@@ -124,19 +124,27 @@ def get_alert_emails_list(settings):
     return emails
 
 def send_email_alert(device: Device, alert_type: str, message: str):
-    """이메일 알림 전송"""
+    """이메일 알림 전송 (여러 수신자 지원)"""
     try:
         settings = get_email_settings()
-        if not settings.is_enabled or not settings.smtp_username or not settings.smtp_password or not settings.alert_email:
+        alert_emails = get_alert_emails_list(settings)
+        
+        if not settings.is_enabled or not settings.smtp_username or not settings.smtp_password or not alert_emails:
             logger.warning("이메일 설정이 완료되지 않았습니다.")
             return False
     
-        msg = MIMEMultipart()
-        msg['From'] = settings.smtp_username
-        msg['To'] = settings.alert_email
-        msg['Subject'] = f"[모니터링 알림] {device.name} ({device.ip_address})"
+        # 여러 수신자에게 이메일 전송
+        success_count = 0
+        failed_emails = []
         
-        body = f"""
+        for alert_email in alert_emails:
+            try:
+                msg = MIMEMultipart()
+                msg['From'] = settings.smtp_username
+                msg['To'] = alert_email
+                msg['Subject'] = f"[모니터링 알림] {device.name} ({device.ip_address})"
+                
+                body = f"""
 모니터링 시스템 알림
 
 장치명: {device.name}
@@ -144,21 +152,35 @@ IP 주소: {device.ip_address}
 알림 유형: {alert_type}
 메시지: {message}
 시간: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}
+수신자: {alert_email}
 
 모니터링 시스템
-        """
+                """
+                
+                msg.attach(MIMEText(body, 'plain', 'utf-8'))
+                
+                server = smtplib.SMTP(settings.smtp_server, settings.smtp_port)
+                server.starttls()
+                server.login(settings.smtp_username, settings.smtp_password)
+                text = msg.as_string()
+                server.sendmail(settings.smtp_username, alert_email, text)
+                server.quit()
+                
+                success_count += 1
+                logger.info(f"이메일 알림 전송 완료: {device.name} -> {alert_email}")
+                
+            except Exception as e:
+                failed_emails.append(f"{alert_email}: {str(e)}")
+                logger.error(f"이메일 전송 실패: {device.name} -> {alert_email} - {e}")
         
-        msg.attach(MIMEText(body, 'plain', 'utf-8'))
-        
-        server = smtplib.SMTP(settings.smtp_server, settings.smtp_port)
-        server.starttls()
-        server.login(settings.smtp_username, settings.smtp_password)
-        text = msg.as_string()
-        server.sendmail(settings.smtp_username, settings.alert_email, text)
-        server.quit()
-        
-        logger.info(f"이메일 알림 전송 완료: {device.name}")
-        return True
+        if success_count > 0:
+            logger.info(f"이메일 알림 전송 완료: {device.name} ({success_count}/{len(alert_emails)}명)")
+            if failed_emails:
+                logger.warning(f"일부 이메일 전송 실패: {', '.join(failed_emails)}")
+            return True
+        else:
+            logger.error(f"모든 이메일 전송 실패: {device.name}")
+            return False
         
     except smtplib.SMTPAuthenticationError as e:
         logger.error(f"이메일 인증 실패: {device.name} - {e}")
@@ -490,7 +512,7 @@ def email_settings():
         settings.smtp_port = int(request.form['smtp_port'])
         settings.smtp_username = request.form['smtp_username']
         settings.smtp_password = request.form['smtp_password']
-        settings.alert_email = request.form['alert_email']
+        settings.alert_emails = request.form['alert_emails']
         settings.is_enabled = 'is_enabled' in request.form
         settings.updated_at = datetime.now(timezone.utc)
         
@@ -509,11 +531,11 @@ def test_email():
         smtp_port = request.form.get('smtp_port', '587')
         smtp_username = request.form.get('smtp_username', '').strip()
         smtp_password = request.form.get('smtp_password', '').strip()
-        alert_email = request.form.get('alert_email', '').strip()
+        alert_emails_text = request.form.get('alert_emails', '').strip()
         is_enabled = request.form.get('is_enabled') == 'on'
         
         # 설정 검증
-        if not smtp_server or not smtp_username or not smtp_password or not alert_email:
+        if not smtp_server or not smtp_username or not smtp_password or not alert_emails_text:
             return jsonify({'success': False, 'message': '이메일 설정이 완전하지 않습니다. 모든 필드를 입력해주세요.'})
         
         if not is_enabled:
@@ -524,8 +546,19 @@ def test_email():
         email_pattern = r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$'
         if not re.match(email_pattern, smtp_username):
             return jsonify({'success': False, 'message': f'사용자명 이메일 형식이 올바르지 않습니다: {smtp_username}'})
-        if not re.match(email_pattern, alert_email):
-            return jsonify({'success': False, 'message': f'알림 이메일 형식이 올바르지 않습니다: {alert_email}'})
+        
+        # 알림 이메일 목록 파싱 및 검증
+        alert_emails = []
+        for line in alert_emails_text.split('\n'):
+            for email in line.split(','):
+                email = email.strip()
+                if email and '@' in email:
+                    if not re.match(email_pattern, email):
+                        return jsonify({'success': False, 'message': f'알림 이메일 형식이 올바르지 않습니다: {email}'})
+                    alert_emails.append(email)
+        
+        if not alert_emails:
+            return jsonify({'success': False, 'message': '유효한 알림 이메일 주소를 입력해주세요.'})
         
         # 포트 번호 검증
         try:
@@ -535,36 +568,53 @@ def test_email():
         except ValueError:
             return jsonify({'success': False, 'message': f'포트 번호는 숫자여야 합니다: {smtp_port}'})
         
-        # 테스트 이메일 전송
-        msg = MIMEMultipart()
-        msg['From'] = smtp_username
-        msg['To'] = alert_email
-        msg['Subject'] = '[테스트] Ping 모니터링 시스템 이메일 설정 확인'
+        # 여러 수신자에게 테스트 이메일 전송
+        success_count = 0
+        failed_emails = []
         
-        body = f"""
+        for alert_email in alert_emails:
+            try:
+                msg = MIMEMultipart()
+                msg['From'] = smtp_username
+                msg['To'] = alert_email
+                msg['Subject'] = '[테스트] Ping 모니터링 시스템 이메일 설정 확인'
+                
+                body = f"""
 이것은 Ping 모니터링 시스템의 테스트 이메일입니다.
 
 설정 정보:
 - SMTP 서버: {smtp_server}:{smtp_port}
 - 사용자명: {smtp_username}
 - 알림 이메일: {alert_email}
+- 총 수신자: {len(alert_emails)}명
 - 전송 시간: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}
 
 이메일 설정이 정상적으로 작동합니다.
 
 Ping 모니터링 시스템
-        """
+                """
+                
+                msg.attach(MIMEText(body, 'plain', 'utf-8'))
+                
+                server = smtplib.SMTP(smtp_server, smtp_port)
+                server.starttls()
+                server.login(smtp_username, smtp_password)
+                text = msg.as_string()
+                server.sendmail(smtp_username, alert_email, text)
+                server.quit()
+                
+                success_count += 1
+                
+            except Exception as e:
+                failed_emails.append(f"{alert_email}: {str(e)}")
         
-        msg.attach(MIMEText(body, 'plain', 'utf-8'))
-        
-        server = smtplib.SMTP(smtp_server, smtp_port)
-        server.starttls()
-        server.login(smtp_username, smtp_password)
-        text = msg.as_string()
-        server.sendmail(smtp_username, alert_email, text)
-        server.quit()
-        
-        return jsonify({'success': True, 'message': '테스트 이메일이 전송되었습니다.'})
+        if success_count > 0:
+            message = f"테스트 이메일이 {success_count}명에게 전송되었습니다."
+            if failed_emails:
+                message += f"\n\n일부 전송 실패:\n" + "\n".join(failed_emails)
+            return jsonify({'success': True, 'message': message})
+        else:
+            return jsonify({'success': False, 'message': f'모든 이메일 전송에 실패했습니다:\n' + "\n".join(failed_emails)})
         
     except smtplib.SMTPAuthenticationError as e:
         error_msg = "🔐 인증 실패: 사용자명 또는 비밀번호가 올바르지 않습니다.\n\n"

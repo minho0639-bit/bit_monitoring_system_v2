@@ -64,10 +64,17 @@
                     </div>
 
                     <div class="mb-3">
-                        <label for="alert_email" class="form-label">알림 수신 이메일 <span class="text-danger">*</span></label>
-                        <input type="email" class="form-control" id="alert_email" name="alert_email" 
-                               value="{{ settings.alert_email }}" required>
-                        <div class="form-text">ping 실패/복구 알림을 받을 이메일 주소</div>
+                        <label for="alert_emails" class="form-label">알림 수신 이메일 <span class="text-danger">*</span></label>
+                        <textarea class="form-control" id="alert_emails" name="alert_emails" rows="4" required>{{ settings.alert_emails or '' }}</textarea>
+                        <div class="form-text">
+                            <strong>여러 명에게 알림을 보내려면:</strong><br>
+                            • 한 줄에 하나씩 이메일 주소 입력<br>
+                            • 또는 쉼표(,)로 구분하여 입력<br>
+                            <strong>예시:</strong><br>
+                            admin@company.com<br>
+                            manager@company.com, team@company.com<br>
+                            support@company.com
+                        </div>
                     </div>
 
                     <div class="d-grid gap-2 d-md-flex justify-content-md-end">
@@ -153,7 +160,17 @@
                     </div>
                     <div class="col-md-6">
                         <p><strong>사용자명:</strong> {{ settings.smtp_username }}</p>
-                        <p><strong>알림 이메일:</strong> {{ settings.alert_email }}</p>
+                        <p><strong>알림 이메일:</strong><br>
+                            {% if settings.alert_emails %}
+                                {% for email in settings.alert_emails.split('\n') %}
+                                    {% if email.strip() %}
+                                        <span class="badge bg-primary me-1">{{ email.strip() }}</span>
+                                    {% endif %}
+                                {% endfor %}
+                            {% else %}
+                                <span class="text-muted">설정되지 않음</span>
+                            {% endif %}
+                        </p>
                         <p><strong>마지막 업데이트:</strong> {{ settings.updated_at.strftime('%Y-%m-%d %H:%M:%S') }}</p>
                     </div>
                 </div>
@@ -182,7 +199,7 @@ function testEmail() {
     formData.append('smtp_port', document.getElementById('smtp_port').value);
     formData.append('smtp_username', document.getElementById('smtp_username').value);
     formData.append('smtp_password', document.getElementById('smtp_password').value);
-    formData.append('alert_email', document.getElementById('alert_email').value);
+    formData.append('alert_emails', document.getElementById('alert_emails').value);
     
     // 체크박스 값 처리
     const isEnabled = document.getElementById('is_enabled').checked;
