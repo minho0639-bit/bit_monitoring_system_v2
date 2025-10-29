@@ -102,11 +102,26 @@ def get_email_settings():
             smtp_port=587,
             smtp_username='',
             smtp_password='',
-            alert_email=''
+            alert_emails=''
         )
         db.session.add(settings)
         db.session.commit()
     return settings
+
+def get_alert_emails_list(settings):
+    """알림 이메일 목록을 리스트로 반환"""
+    if not settings.alert_emails:
+        return []
+    
+    # 줄바꿈과 쉼표로 구분된 이메일들을 정리
+    emails = []
+    for line in settings.alert_emails.split('\n'):
+        for email in line.split(','):
+            email = email.strip()
+            if email and '@' in email:
+                emails.append(email)
+    
+    return emails
 
 def send_email_alert(device: Device, alert_type: str, message: str):
     """이메일 알림 전송"""
