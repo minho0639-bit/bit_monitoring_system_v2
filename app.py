@@ -82,7 +82,7 @@ class EmailSettings(db.Model):
     smtp_port = db.Column(db.Integer, nullable=False, default=587)
     smtp_username = db.Column(db.String(100), nullable=False)
     smtp_password = db.Column(db.String(100), nullable=False)
-    alert_email = db.Column(db.String(100), nullable=False)
+    alert_emails = db.Column(db.Text, nullable=False)  # 여러 이메일을 줄바꿈으로 구분
     is_enabled = db.Column(db.Boolean, default=True)
     created_at = db.Column(db.DateTime, default=lambda: datetime.now(timezone.utc))
     updated_at = db.Column(db.DateTime, default=lambda: datetime.now(timezone.utc), onupdate=lambda: datetime.now(timezone.utc))
