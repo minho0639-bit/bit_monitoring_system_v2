@@ -170,6 +170,12 @@ function testEmail() {
         return;
     }
     
+    // 테스트 버튼 비활성화
+    const testBtn = document.querySelector('button[onclick="testEmail()"]');
+    const originalText = testBtn.innerHTML;
+    testBtn.disabled = true;
+    testBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> 전송 중...';
+    
     // 간단한 테스트 이메일 전송 요청
     fetch('/api/test_email', {
         method: 'POST',
@@ -180,13 +186,18 @@ function testEmail() {
     .then(response => response.json())
     .then(data => {
         if (data.success) {
-            alert('테스트 이메일이 전송되었습니다.');
+            alert('✅ 테스트 이메일이 성공적으로 전송되었습니다!\n\n수신함을 확인해보세요.');
         } else {
-            alert('테스트 이메일 전송에 실패했습니다: ' + data.message);
+            alert('❌ 테스트 이메일 전송에 실패했습니다:\n\n' + data.message + '\n\n설정을 다시 확인해주세요.');
         }
     })
     .catch(error => {
-        alert('오류가 발생했습니다: ' + error);
+        alert('❌ 오류가 발생했습니다:\n\n' + error + '\n\n네트워크 연결을 확인해주세요.');
+    })
+    .finally(() => {
+        // 버튼 상태 복원
+        testBtn.disabled = false;
+        testBtn.innerHTML = originalText;
     });
 }
 </script>

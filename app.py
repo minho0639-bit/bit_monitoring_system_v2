@@ -493,6 +493,18 @@ def test_email():
         if not settings.is_enabled:
             return jsonify({'success': False, 'message': '이메일 알림이 비활성화되어 있습니다.'})
         
+        # 설정 검증
+        if not settings.smtp_server or not settings.smtp_username or not settings.smtp_password or not settings.alert_email:
+            return jsonify({'success': False, 'message': '이메일 설정이 완전하지 않습니다. 모든 필드를 입력해주세요.'})
+        
+        # 이메일 주소 형식 검증
+        import re
+        email_pattern = r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$'
+        if not re.match(email_pattern, settings.smtp_username):
+            return jsonify({'success': False, 'message': f'사용자명 이메일 형식이 올바르지 않습니다: {settings.smtp_username}'})
+        if not re.match(email_pattern, settings.alert_email):
+            return jsonify({'success': False, 'message': f'알림 이메일 형식이 올바르지 않습니다: {settings.alert_email}'})
+        
         # 테스트 이메일 전송
         msg = MIMEMultipart()
         msg['From'] = settings.smtp_username
@@ -525,16 +537,29 @@ Ping 모니터링 시스템
         return jsonify({'success': True, 'message': '테스트 이메일이 전송되었습니다.'})
         
     except smtplib.SMTPAuthenticationError as e:
-        error_msg = "인증 실패: 사용자명 또는 비밀번호가 올바르지 않습니다."
+        error_msg = "🔐 인증 실패: 사용자명 또는 비밀번호가 올바르지 않습니다.\n\n"
         if "gmail" in settings.smtp_server.lower():
-            error_msg += " Gmail의 경우 앱 비밀번호를 사용하세요."
+            error_msg += "Gmail 설정 방법:\n"
+            error_msg += "1. Google 계정에서 2단계 인증 활성화\n"
+            error_msg += "2. 앱 비밀번호 생성 (16자리)\n"
+            error_msg += "3. 일반 비밀번호 대신 앱 비밀번호 사용\n"
+            error_msg += "4. 링크: https://support.google.com/accounts/answer/185833"
+        elif "naver" in settings.smtp_server.lower():
+            error_msg += "Naver 설정 방법:\n"
+            error_msg += "1. Naver 메일에서 POP3/IMAP 설정 활성화\n"
+            error_msg += "2. 보안 설정에서 '보안 수준이 낮은 앱의 액세스' 허용"
+        elif "outlook" in settings.smtp_server.lower() or "hotmail" in settings.smtp_server.lower():
+            error_msg += "Outlook 설정 방법:\n"
+            error_msg += "1. Microsoft 계정에서 2단계 인증 활성화\n"
+            error_msg += "2. 앱 비밀번호 생성\n"
+            error_msg += "3. 일반 비밀번호 대신 앱 비밀번호 사용"
         return jsonify({'success': False, 'message': error_msg})
     except smtplib.SMTPConnectError as e:
-        return jsonify({'success': False, 'message': f'SMTP 서버 연결 실패: {settings.smtp_server}:{settings.smtp_port}'})
+        return jsonify({'success': False, 'message': f'🌐 SMTP 서버 연결 실패\n\n서버: {settings.smtp_server}\n포트: {settings.smtp_port}\n\n확인사항:\n- 서버 주소와 포트 번호가 올바른지 확인\n- 방화벽에서 포트 587이 차단되지 않았는지 확인\n- 네트워크 연결 상태 확인'})
     except smtplib.SMTPException as e:
-        return jsonify({'success': False, 'message': f'SMTP 오류: {str(e)}'})
+        return jsonify({'success': False, 'message': f'📧 SMTP 오류\n\n오류 내용: {str(e)}\n\n확인사항:\n- 이메일 주소 형식이 올바른지 확인\n- SMTP 서버 설정이 정확한지 확인'})
     except Exception as e:
-        return jsonify({'success': False, 'message': f'이메일 전송 실패: {str(e)}'})
+        return jsonify({'success': False, 'message': f'❌ 예상치 못한 오류\n\n오류 내용: {str(e)}\n\n시스템 관리자에게 문의하세요.'})
 
 @app.route('/api/device_status/<int:device_id>')
 def device_status(device_id):

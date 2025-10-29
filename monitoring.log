@@ -2267,3 +2267,15 @@ WHERE device.is_active = 1]
 2025-10-29 00:34:14,246 - INFO - 모니터링이 시작되었습니다.
 2025-10-29 00:34:14,308 - WARNING -  * Debugger is active!
 2025-10-29 00:34:14,309 - INFO -  * Debugger PIN: 474-574-673
+2025-10-29 00:37:59,886 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-29 00:37:59,895 - INFO - 모니터링이 시작되었습니다.
+2025-10-29 00:37:59,957 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://172.30.0.2:8000
+2025-10-29 00:37:59,958 - INFO - [33mPress CTRL+C to quit[0m
+2025-10-29 00:37:59,961 - INFO -  * Restarting with stat
+2025-10-29 00:38:01,031 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-29 00:38:01,042 - INFO - 모니터링이 시작되었습니다.
+2025-10-29 00:38:01,080 - WARNING -  * Debugger is active!
+2025-10-29 00:38:01,081 - INFO -  * Debugger PIN: 474-574-673
