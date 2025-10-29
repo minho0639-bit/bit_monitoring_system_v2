@@ -1,0 +1,97 @@
+{% extends "base.html" %}
+
+{% block title %}장치 수정 - Ping 모니터링 시스템{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-8">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="card-title mb-0">
+                    <i class="fas fa-edit"></i> 장치 수정
+                </h5>
+            </div>
+            <div class="card-body">
+                <form method="POST">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">장치명 <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" id="name" name="name" 
+                               value="{{ device.name }}" required>
+                        <div class="form-text">모니터링할 장치의 이름을 입력하세요.</div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="ip_address" class="form-label">IP 주소 <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" id="ip_address" name="ip_address" 
+                               value="{{ device.ip_address }}" required>
+                        <div class="form-text">IPv4 또는 IPv6 주소를 입력하세요.</div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="description" class="form-label">설명</label>
+                        <textarea class="form-control" id="description" name="description" rows="3"
+                                  placeholder="장치에 대한 추가 설명 (선택사항)">{{ device.description or '' }}</textarea>
+                        <div class="form-text">장치의 용도나 위치 등에 대한 설명을 입력하세요.</div>
+                    </div>
+
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="is_active" name="is_active" 
+                               {{ 'checked' if device.is_active else '' }}>
+                        <label class="form-check-label" for="is_active">
+                            모니터링 활성화
+                        </label>
+                        <div class="form-text">체크하면 이 장치에 대한 모니터링을 활성화합니다.</div>
+                    </div>
+
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                        <a href="{{ url_for('devices') }}" class="btn btn-secondary me-md-2">
+                            <i class="fas fa-arrow-left"></i> 취소
+                        </a>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-save"></i> 변경사항 저장
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- 장치 정보 -->
+        <div class="card mt-4">
+            <div class="card-header">
+                <h6 class="card-title mb-0">
+                    <i class="fas fa-info-circle"></i> 장치 정보
+                </h6>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p><strong>등록일:</strong> {{ device.created_at.strftime('%Y-%m-%d %H:%M:%S') }}</p>
+                        <p><strong>최근 수정:</strong> {{ device.updated_at.strftime('%Y-%m-%d %H:%M:%S') }}</p>
+                    </div>
+                    <div class="col-md-6">
+                        <p><strong>총 Ping 로그:</strong> {{ device.ping_logs|length }}개</p>
+                        <p><strong>알림 로그:</strong> {{ device.ping_logs|selectattr('is_success', 'equalto', false)|list|length }}개</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+// IP 주소 유효성 검사
+document.getElementById('ip_address').addEventListener('input', function(e) {
+    const ip = e.target.value;
+    const ipv4Regex = /^(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$/;
+    const ipv6Regex = /^(?:[0-9a-fA-F]{1,4}:){7}[0-9a-fA-F]{1,4}$|^::1$|^::$/;
+    
+    if (ip && !ipv4Regex.test(ip) && !ipv6Regex.test(ip)) {
+        e.target.setCustomValidity('올바른 IP 주소 형식을 입력하세요.');
+    } else {
+        e.target.setCustomValidity('');
+    }
+});
+</script>
+{% endblock %}

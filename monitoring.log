@@ -1,0 +1,2305 @@
+2025-10-28 06:41:34,432 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 06:41:34,433 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:41:34,433 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 06:41:34,438 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.30.0.2:5000
+2025-10-28 06:41:34,438 - INFO - [33mPress CTRL+C to quit[0m
+2025-10-28 06:41:34,439 - INFO -  * Restarting with stat
+2025-10-28 06:41:34,678 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 06:41:34,679 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:41:34,679 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 06:41:34,683 - WARNING -  * Debugger is active!
+2025-10-28 06:41:34,684 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 06:42:04,434 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:42:04,679 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:42:34,434 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:42:34,680 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:43:04,435 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:43:04,680 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:43:34,435 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:43:34,681 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:44:04,436 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:44:04,681 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:44:34,436 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:44:34,682 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:45:04,437 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:45:04,682 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:45:34,437 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:45:34,682 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:46:04,438 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:46:04,683 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:46:34,438 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:46:34,683 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:47:04,439 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:47:04,684 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:47:34,439 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:47:34,684 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:48:04,440 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:48:04,685 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:48:34,440 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:48:34,685 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:49:04,440 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:49:04,685 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:49:34,441 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:49:34,686 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:50:04,441 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:50:04,686 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:50:34,442 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:50:34,687 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:51:04,442 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:51:04,687 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:51:34,443 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:51:34,688 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:51:35,459 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 06:51:35,460 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:51:35,460 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 06:51:42,037 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 06:51:42,146 - INFO -  * Restarting with stat
+2025-10-28 06:51:42,465 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 06:51:42,465 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:51:42,466 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 06:51:42,471 - WARNING -  * Debugger is active!
+2025-10-28 06:51:42,471 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 06:51:56,586 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 06:51:56,658 - INFO -  * Restarting with stat
+2025-10-28 06:51:57,085 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 06:51:57,091 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 06:51:57,097 - WARNING -  * Debugger is active!
+2025-10-28 06:51:57,097 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 06:51:59,699 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 06:51:59,704 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 06:51:59,713 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.30.0.2:8080
+2025-10-28 06:51:59,713 - INFO - [33mPress CTRL+C to quit[0m
+2025-10-28 06:51:59,713 - INFO -  * Restarting with stat
+2025-10-28 06:52:00,245 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 06:52:00,250 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 06:52:00,262 - WARNING -  * Debugger is active!
+2025-10-28 06:52:00,263 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 06:52:04,444 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:52:34,444 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:53:04,445 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:53:34,445 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:54:04,446 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:54:34,446 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:55:04,447 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:55:34,447 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:56:04,448 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:56:34,448 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:57:04,449 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:57:34,449 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:58:04,450 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:58:34,450 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:59:04,451 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 06:59:34,451 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:00:04,452 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:00:34,452 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:01:04,453 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:01:34,454 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:02:01,151 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:02:01,157 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:02:04,455 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:02:05,249 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 07:02:05,392 - INFO -  * Restarting with stat
+2025-10-28 07:02:05,400 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 07:02:05,554 - INFO -  * Restarting with stat
+2025-10-28 07:02:05,919 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:02:05,925 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:02:05,941 - WARNING -  * Debugger is active!
+2025-10-28 07:02:05,942 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 07:02:06,079 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:02:06,085 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:02:06,103 - WARNING -  * Debugger is active!
+2025-10-28 07:02:06,103 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 07:02:07,630 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:02:07,636 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:02:07,653 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:9000
+ * Running on http://172.30.0.2:9000
+2025-10-28 07:02:07,653 - INFO - [33mPress CTRL+C to quit[0m
+2025-10-28 07:02:07,654 - INFO -  * Restarting with stat
+2025-10-28 07:02:08,260 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:02:08,266 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:02:08,283 - WARNING -  * Debugger is active!
+2025-10-28 07:02:08,284 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 07:02:34,456 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:03:04,458 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:03:34,459 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:04:04,461 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:04:34,462 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:05:04,463 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:05:34,463 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:06:04,464 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:06:34,466 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:07:04,467 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:07:34,468 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:08:04,469 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:08:34,469 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:09:04,470 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:09:34,471 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:10:04,472 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:10:34,472 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:11:04,474 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:11:34,474 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:12:04,475 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:12:11,967 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:12:11,975 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:12:22,921 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 07:12:22,924 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 07:12:23,245 - INFO -  * Restarting with stat
+2025-10-28 07:12:23,282 - INFO -  * Restarting with stat
+2025-10-28 07:12:23,315 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 07:12:23,571 - INFO -  * Restarting with stat
+2025-10-28 07:12:24,268 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:12:24,283 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:12:24,306 - WARNING -  * Debugger is active!
+2025-10-28 07:12:24,311 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 07:12:24,352 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:12:24,364 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:12:24,394 - WARNING -  * Debugger is active!
+2025-10-28 07:12:24,395 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 07:12:24,535 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:12:24,549 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:12:24,568 - WARNING -  * Debugger is active!
+2025-10-28 07:12:24,572 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 07:12:28,618 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:12:28,630 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:12:28,653 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:3000
+ * Running on http://172.30.0.2:3000
+2025-10-28 07:12:28,654 - INFO - [33mPress CTRL+C to quit[0m
+2025-10-28 07:12:28,659 - INFO -  * Restarting with stat
+2025-10-28 07:12:29,677 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:12:29,686 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:12:29,720 - WARNING -  * Debugger is active!
+2025-10-28 07:12:29,721 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 07:12:34,476 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:13:04,477 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:13:34,478 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:14:04,478 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:14:34,482 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:15:04,483 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:15:34,484 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:16:04,485 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:16:34,486 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:17:04,487 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:17:34,488 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:18:04,489 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:18:34,489 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:19:04,490 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:19:34,491 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:20:04,492 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:20:34,492 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:21:04,493 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:21:34,494 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:22:04,498 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:22:34,498 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:22:43,074 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:22:43,087 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:22:53,609 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 07:22:53,689 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 07:22:53,823 - INFO -  * Restarting with stat
+2025-10-28 07:22:54,216 - INFO -  * Restarting with stat
+2025-10-28 07:22:54,362 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 07:22:54,385 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 07:22:54,693 - INFO -  * Restarting with stat
+2025-10-28 07:22:54,849 - INFO -  * Restarting with stat
+2025-10-28 07:22:54,935 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:22:54,941 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:22:54,943 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:22:54,947 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:22:54,952 - WARNING -  * Debugger is active!
+2025-10-28 07:22:54,955 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 07:22:54,973 - WARNING -  * Debugger is active!
+2025-10-28 07:22:54,974 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 07:22:55,585 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:22:55,595 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:22:55,624 - WARNING -  * Debugger is active!
+2025-10-28 07:22:55,624 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 07:22:55,672 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:22:55,682 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:22:55,705 - WARNING -  * Debugger is active!
+2025-10-28 07:22:55,710 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 07:23:01,467 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:23:01,483 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:23:01,510 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://172.30.0.2:8000
+2025-10-28 07:23:01,510 - INFO - [33mPress CTRL+C to quit[0m
+2025-10-28 07:23:01,515 - INFO -  * Restarting with stat
+2025-10-28 07:23:02,364 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:23:02,375 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:23:02,409 - WARNING -  * Debugger is active!
+2025-10-28 07:23:02,410 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 07:23:04,499 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:23:34,509 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:24:04,510 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:24:34,510 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:25:04,511 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:25:34,512 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:26:04,513 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:26:34,514 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:27:04,515 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:27:34,516 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:28:04,526 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:28:34,526 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:29:04,527 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:29:34,527 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:30:04,528 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:30:34,528 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:31:04,529 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:31:34,530 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:32:04,530 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:32:34,531 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:33:04,532 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:33:34,532 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:34:04,535 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:34:34,536 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:35:04,537 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:35:34,537 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:36:04,539 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:36:34,540 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:37:04,544 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:37:34,545 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:38:04,546 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:38:34,546 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:39:04,547 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:39:34,547 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:40:04,548 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:40:34,548 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:41:04,549 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:41:34,549 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:42:04,550 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:42:34,550 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:43:04,551 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:43:34,551 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:44:04,552 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:44:34,552 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:44:47,386 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 07:44:47,391 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 07:44:47,393 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 07:44:47,558 - INFO -  * Restarting with stat
+2025-10-28 07:44:47,560 - INFO -  * Restarting with stat
+2025-10-28 07:44:47,792 - INFO -  * Restarting with stat
+2025-10-28 07:44:47,864 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 07:44:48,082 - INFO -  * Restarting with stat
+2025-10-28 07:44:48,427 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:44:48,454 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:44:48,462 - WARNING -  * Debugger is active!
+2025-10-28 07:44:48,463 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 07:44:48,532 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:44:48,544 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:44:48,577 - WARNING -  * Debugger is active!
+2025-10-28 07:44:48,578 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 07:44:48,703 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:44:48,714 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:44:48,745 - WARNING -  * Debugger is active!
+2025-10-28 07:44:48,746 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 07:44:48,857 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:44:48,864 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:44:48,901 - WARNING -  * Debugger is active!
+2025-10-28 07:44:48,902 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 07:45:02,065 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 07:45:02,220 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 07:45:02,335 - INFO -  * Restarting with stat
+2025-10-28 07:45:02,554 - INFO -  * Restarting with stat
+2025-10-28 07:45:02,799 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 07:45:02,897 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 07:45:02,993 - INFO -  * Restarting with stat
+2025-10-28 07:45:03,025 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:45:03,050 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:45:03,065 - INFO -  * Restarting with stat
+2025-10-28 07:45:03,065 - WARNING -  * Debugger is active!
+2025-10-28 07:45:03,078 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 07:45:03,208 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:45:03,222 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:45:03,240 - WARNING -  * Debugger is active!
+2025-10-28 07:45:03,241 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 07:45:03,786 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:45:03,795 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:45:03,815 - WARNING -  * Debugger is active!
+2025-10-28 07:45:03,821 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 07:45:03,875 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:45:03,883 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:45:03,912 - WARNING -  * Debugger is active!
+2025-10-28 07:45:03,913 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 07:45:04,553 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:45:34,554 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:46:04,560 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:46:24,525 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 07:46:24,621 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 07:46:24,752 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 07:46:24,772 - INFO -  * Restarting with stat
+2025-10-28 07:46:24,910 - INFO -  * Restarting with stat
+2025-10-28 07:46:24,963 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 07:46:24,975 - INFO -  * Restarting with stat
+2025-10-28 07:46:25,102 - INFO -  * Restarting with stat
+2025-10-28 07:46:25,273 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:46:25,279 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:46:25,287 - WARNING -  * Debugger is active!
+2025-10-28 07:46:25,288 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 07:46:25,656 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:46:25,671 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:46:25,692 - WARNING -  * Debugger is active!
+2025-10-28 07:46:25,695 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:46:25,696 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 07:46:25,706 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:46:25,738 - WARNING -  * Debugger is active!
+2025-10-28 07:46:25,739 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 07:46:25,826 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:46:25,834 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:46:25,868 - WARNING -  * Debugger is active!
+2025-10-28 07:46:25,869 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 07:46:34,560 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:46:37,986 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 07:46:38,027 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 07:46:38,119 - INFO -  * Restarting with stat
+2025-10-28 07:46:38,145 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 07:46:38,315 - INFO -  * Restarting with stat
+2025-10-28 07:46:38,381 - INFO -  * Restarting with stat
+2025-10-28 07:46:38,600 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 07:46:38,741 - INFO -  * Restarting with stat
+2025-10-28 07:46:38,827 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:46:38,834 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:46:38,844 - WARNING -  * Debugger is active!
+2025-10-28 07:46:38,851 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 07:46:39,053 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:46:39,062 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:46:39,091 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:46:39,095 - WARNING -  * Debugger is active!
+2025-10-28 07:46:39,096 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 07:46:39,102 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:46:39,126 - WARNING -  * Debugger is active!
+2025-10-28 07:46:39,126 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 07:46:39,285 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:46:39,299 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:46:39,318 - WARNING -  * Debugger is active!
+2025-10-28 07:46:39,319 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 07:46:43,981 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 07:46:44,243 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 07:46:44,270 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 07:46:44,295 - INFO -  * Restarting with stat
+2025-10-28 07:46:44,436 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 07:46:44,466 - INFO -  * Restarting with stat
+2025-10-28 07:46:44,470 - INFO -  * Restarting with stat
+2025-10-28 07:46:44,583 - INFO -  * Restarting with stat
+2025-10-28 07:46:44,964 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:46:44,970 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:46:44,979 - WARNING -  * Debugger is active!
+2025-10-28 07:46:44,980 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 07:46:44,985 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:46:44,992 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:46:45,005 - WARNING -  * Debugger is active!
+2025-10-28 07:46:45,007 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 07:46:45,053 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:46:45,063 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:46:45,081 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:46:45,085 - WARNING -  * Debugger is active!
+2025-10-28 07:46:45,085 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 07:46:45,087 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:46:45,110 - WARNING -  * Debugger is active!
+2025-10-28 07:46:45,110 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 07:46:48,534 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:46:48,546 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:46:48,583 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://172.30.0.2:8000
+2025-10-28 07:46:48,583 - INFO - [33mPress CTRL+C to quit[0m
+2025-10-28 07:46:48,589 - INFO -  * Restarting with stat
+2025-10-28 07:46:49,499 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:46:49,511 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:46:49,530 - WARNING -  * Debugger is active!
+2025-10-28 07:46:49,531 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 07:47:04,561 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:47:24,335 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:47:26,387 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:47:28,469 - INFO - 권한 오류로 인해 sudo로 재시도: 192.168.999.999
+2025-10-28 07:47:28,856 - WARNING - 이메일 설정이 완료되지 않았습니다.
+2025-10-28 07:47:28,886 - WARNING - 장치 테스트 장치 ping 실패: [Errno 13] Permission denied
+2025-10-28 07:47:28,891 - WARNING - 이메일 설정이 완료되지 않았습니다.
+2025-10-28 07:47:28,902 - WARNING - 장치 로컬호스트 ping 실패: [Errno 13] Permission denied
+2025-10-28 07:47:30,061 - WARNING - 이메일 설정이 완료되지 않았습니다.
+2025-10-28 07:47:30,091 - WARNING - 장치 테스트 장치 ping 실패: [Errno 13] Permission denied
+2025-10-28 07:47:30,096 - WARNING - 이메일 설정이 완료되지 않았습니다.
+2025-10-28 07:47:30,105 - WARNING - 장치 로컬호스트 ping 실패: [Errno 13] Permission denied
+2025-10-28 07:47:34,562 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:47:37,994 - WARNING - 이메일 설정이 완료되지 않았습니다.
+2025-10-28 07:47:38,031 - WARNING - 장치 테스트 장치 ping 실패: [Errno 13] Permission denied
+2025-10-28 07:47:38,037 - WARNING - 이메일 설정이 완료되지 않았습니다.
+2025-10-28 07:47:38,043 - WARNING - 장치 로컬호스트 ping 실패: [Errno 13] Permission denied
+2025-10-28 07:47:45,002 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:47:45,026 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:47:45,087 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:47:45,125 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:47:47,047 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:47:47,060 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:47:47,122 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:47:47,162 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:48:04,562 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:48:19,095 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:48:19,126 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:48:19,196 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:48:19,222 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:48:21,128 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:48:21,158 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:48:21,227 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:48:21,262 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:48:34,563 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:48:53,199 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:48:53,201 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:48:53,296 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:48:53,336 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:48:55,234 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:48:55,237 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:48:55,331 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:48:55,372 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:49:04,564 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:49:27,276 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:49:27,288 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:49:27,374 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:49:27,453 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:49:29,313 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:49:29,322 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:49:29,412 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:49:29,493 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:49:34,565 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:50:01,413 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:50:01,438 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:50:01,456 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:50:01,550 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:50:03,451 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:50:03,476 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:50:03,490 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:50:03,584 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:50:04,565 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:50:34,566 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:50:35,536 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:50:35,537 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:50:35,543 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:50:35,631 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:50:37,569 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:50:37,577 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:50:37,579 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:50:37,671 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:51:04,566 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:51:09,614 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:51:09,620 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:51:09,648 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:51:09,703 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:51:11,651 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:51:11,658 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:51:11,682 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:51:11,736 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:51:34,567 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:51:43,702 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:51:43,714 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:51:43,726 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:51:43,789 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:51:45,734 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:51:45,749 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:51:45,782 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:51:45,823 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:52:04,567 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:52:17,773 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:52:17,802 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:52:17,837 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:52:17,871 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:52:19,812 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:52:19,838 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:52:19,869 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:52:19,898 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:52:28,997 - WARNING - 이메일 설정이 완료되지 않았습니다.
+2025-10-28 07:52:29,009 - WARNING - 장치 테스트 장치 ping 실패: [Errno 13] Permission denied
+2025-10-28 07:52:29,010 - WARNING - 이메일 설정이 완료되지 않았습니다.
+2025-10-28 07:52:29,027 - WARNING - 장치 로컬호스트 ping 실패: [Errno 13] Permission denied
+2025-10-28 07:52:30,204 - WARNING - 이메일 설정이 완료되지 않았습니다.
+2025-10-28 07:52:30,214 - WARNING - 장치 테스트 장치 ping 실패: [Errno 13] Permission denied
+2025-10-28 07:52:30,219 - WARNING - 이메일 설정이 완료되지 않았습니다.
+2025-10-28 07:52:30,224 - WARNING - 장치 로컬호스트 ping 실패: [Errno 13] Permission denied
+2025-10-28 07:52:34,568 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:52:38,147 - WARNING - 이메일 설정이 완료되지 않았습니다.
+2025-10-28 07:52:38,163 - WARNING - 장치 테스트 장치 ping 실패: [Errno 13] Permission denied
+2025-10-28 07:52:38,164 - WARNING - 이메일 설정이 완료되지 않았습니다.
+2025-10-28 07:52:38,172 - WARNING - 장치 로컬호스트 ping 실패: [Errno 13] Permission denied
+2025-10-28 07:52:51,852 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:52:51,884 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:52:51,915 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:52:51,949 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:52:53,892 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:52:53,917 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:52:53,967 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:52:53,991 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:53:04,568 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:53:25,961 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:53:25,968 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:53:25,996 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:53:26,029 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:53:27,994 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:53:28,003 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:53:28,027 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:53:28,059 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:53:34,572 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:54:00,050 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:54:00,061 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:54:00,082 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:54:00,111 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:54:02,082 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:54:02,097 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:54:02,110 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:54:02,136 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:54:04,573 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:54:34,122 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:54:34,158 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:54:34,162 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:54:34,191 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:54:34,575 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:54:36,156 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:54:36,198 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:54:36,199 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:54:36,218 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:55:04,575 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:55:08,202 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:55:08,247 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:55:08,272 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:55:08,276 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:55:10,239 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:55:10,277 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:55:10,304 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:55:10,313 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:55:25,834 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 07:55:25,843 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 07:55:25,879 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 07:55:25,886 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 07:55:26,146 - INFO -  * Restarting with stat
+2025-10-28 07:55:26,248 - INFO -  * Restarting with stat
+2025-10-28 07:55:26,287 - INFO -  * Restarting with stat
+2025-10-28 07:55:26,313 - INFO -  * Restarting with stat
+2025-10-28 07:55:26,910 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:55:26,916 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:55:26,925 - WARNING -  * Debugger is active!
+2025-10-28 07:55:26,926 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 07:55:26,961 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:55:27,138 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:55:27,146 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:55:27,170 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:55:27,184 - WARNING -  * Debugger is active!
+2025-10-28 07:55:27,189 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 07:55:27,242 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:55:27,254 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:55:27,273 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:55:27,288 - WARNING -  * Debugger is active!
+2025-10-28 07:55:27,289 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 07:55:27,413 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:55:27,425 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:55:27,448 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:55:27,457 - WARNING -  * Debugger is active!
+2025-10-28 07:55:27,458 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 07:55:29,014 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:55:29,212 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:55:29,315 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:55:29,482 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:55:34,576 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:55:44,707 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:55:44,718 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:55:44,751 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:55:44,761 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://172.30.0.2:8000
+2025-10-28 07:55:44,766 - INFO - [33mPress CTRL+C to quit[0m
+2025-10-28 07:55:44,767 - INFO -  * Restarting with stat
+2025-10-28 07:55:45,976 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:55:45,985 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:55:46,017 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:55:46,025 - WARNING -  * Debugger is active!
+2025-10-28 07:55:46,026 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 07:55:46,821 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:55:48,058 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:56:00,674 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 07:56:00,872 - INFO -  * Restarting with stat
+2025-10-28 07:56:00,958 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 07:56:01,037 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 07:56:01,165 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 07:56:01,484 - INFO -  * Restarting with stat
+2025-10-28 07:56:01,535 - INFO -  * Restarting with stat
+2025-10-28 07:56:01,617 - INFO -  * Restarting with stat
+2025-10-28 07:56:01,874 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:56:01,881 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:56:01,897 - WARNING -  * Debugger is active!
+2025-10-28 07:56:01,897 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 07:56:01,972 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:56:02,505 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:56:02,520 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:56:02,538 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:56:02,542 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:56:02,543 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:56:02,543 - WARNING -  * Debugger is active!
+2025-10-28 07:56:02,544 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 07:56:02,548 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:56:02,557 - WARNING -  * Debugger is active!
+2025-10-28 07:56:02,557 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 07:56:02,557 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:56:02,585 - WARNING -  * Debugger is active!
+2025-10-28 07:56:02,588 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 07:56:02,600 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:56:02,623 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:56:04,027 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:56:04,577 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:56:04,580 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:56:04,640 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:56:04,666 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:56:07,703 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 07:56:07,730 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 07:56:07,755 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 07:56:07,887 - INFO -  * Restarting with stat
+2025-10-28 07:56:08,006 - INFO -  * Restarting with stat
+2025-10-28 07:56:08,108 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 07:56:08,128 - INFO -  * Restarting with stat
+2025-10-28 07:56:08,268 - INFO -  * Restarting with stat
+2025-10-28 07:56:08,844 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:56:08,851 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:56:08,851 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:56:08,857 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:56:08,862 - WARNING -  * Debugger is active!
+2025-10-28 07:56:08,866 - WARNING -  * Debugger is active!
+2025-10-28 07:56:08,866 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 07:56:08,871 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 07:56:08,899 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:56:08,902 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:56:08,950 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:56:08,961 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:56:09,000 - WARNING -  * Debugger is active!
+2025-10-28 07:56:09,001 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:56:09,002 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 07:56:09,021 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:56:09,035 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:56:09,064 - WARNING -  * Debugger is active!
+2025-10-28 07:56:09,064 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 07:56:09,067 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:56:10,943 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:56:10,966 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:56:11,038 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:56:11,099 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:56:21,364 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 07:56:21,647 - INFO -  * Restarting with stat
+2025-10-28 07:56:22,198 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 07:56:22,231 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 07:56:22,314 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 07:56:22,390 - INFO -  * Restarting with stat
+2025-10-28 07:56:22,409 - INFO -  * Restarting with stat
+2025-10-28 07:56:22,551 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:56:22,560 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:56:22,581 - WARNING -  * Debugger is active!
+2025-10-28 07:56:22,591 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 07:56:22,644 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:56:22,678 - INFO -  * Restarting with stat
+2025-10-28 07:56:23,049 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:56:23,056 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:56:23,097 - WARNING -  * Debugger is active!
+2025-10-28 07:56:23,100 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 07:56:23,107 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:56:23,177 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:56:23,188 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:56:23,213 - WARNING -  * Debugger is active!
+2025-10-28 07:56:23,214 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 07:56:23,231 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:56:23,345 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:56:23,355 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:56:23,370 - WARNING -  * Debugger is active!
+2025-10-28 07:56:23,371 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 07:56:23,372 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:56:24,701 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:56:25,141 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:56:25,267 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:56:25,408 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:56:28,246 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 07:56:28,358 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 07:56:28,457 - INFO -  * Restarting with stat
+2025-10-28 07:56:28,486 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 07:56:28,621 - INFO -  * Restarting with stat
+2025-10-28 07:56:28,702 - INFO -  * Restarting with stat
+2025-10-28 07:56:28,798 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 07:56:29,168 - INFO -  * Restarting with stat
+2025-10-28 07:56:29,428 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:56:29,436 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:56:29,454 - WARNING -  * Debugger is active!
+2025-10-28 07:56:29,455 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 07:56:29,530 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:56:29,647 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:56:29,656 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:56:29,673 - WARNING -  * Debugger is active!
+2025-10-28 07:56:29,674 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:56:29,675 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 07:56:29,770 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:56:29,777 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:56:29,810 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:56:29,811 - WARNING -  * Debugger is active!
+2025-10-28 07:56:29,815 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 07:56:29,943 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:56:29,954 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:56:29,978 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:56:29,991 - WARNING -  * Debugger is active!
+2025-10-28 07:56:29,992 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 07:56:31,578 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:56:31,721 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:56:31,845 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:56:32,019 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:56:33,603 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 07:56:33,756 - INFO -  * Restarting with stat
+2025-10-28 07:56:33,793 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 07:56:33,942 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 07:56:34,046 - INFO -  * Restarting with stat
+2025-10-28 07:56:34,140 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 07:56:34,168 - INFO -  * Restarting with stat
+2025-10-28 07:56:34,376 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:56:34,382 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:56:34,391 - WARNING -  * Debugger is active!
+2025-10-28 07:56:34,391 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 07:56:34,403 - INFO -  * Restarting with stat
+2025-10-28 07:56:34,412 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:56:34,577 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:56:34,683 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:56:34,689 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:56:34,697 - WARNING -  * Debugger is active!
+2025-10-28 07:56:34,698 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 07:56:34,717 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:56:34,792 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:56:34,802 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:56:34,813 - WARNING -  * Debugger is active!
+2025-10-28 07:56:34,814 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 07:56:34,814 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:56:35,039 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:56:35,048 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:56:35,063 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:56:35,067 - WARNING -  * Debugger is active!
+2025-10-28 07:56:35,067 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 07:56:36,456 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:56:36,755 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:56:36,839 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:56:37,096 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:56:37,800 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 07:56:37,908 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 07:56:38,055 - INFO -  * Restarting with stat
+2025-10-28 07:56:38,075 - INFO -  * Restarting with stat
+2025-10-28 07:56:38,188 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 07:56:38,475 - INFO -  * Restarting with stat
+2025-10-28 07:56:38,499 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 07:56:38,641 - INFO -  * Restarting with stat
+2025-10-28 07:56:38,992 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:56:39,002 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:56:39,039 - WARNING -  * Debugger is active!
+2025-10-28 07:56:39,040 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 07:56:39,090 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:56:39,095 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:56:39,101 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:56:39,116 - WARNING -  * Debugger is active!
+2025-10-28 07:56:39,127 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:56:39,135 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:56:39,141 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 07:56:39,144 - WARNING -  * Debugger is active!
+2025-10-28 07:56:39,144 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 07:56:39,181 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:56:39,181 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:56:39,288 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:56:39,297 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:56:39,317 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:56:39,331 - WARNING -  * Debugger is active!
+2025-10-28 07:56:39,332 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 07:56:41,147 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:56:41,218 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:56:41,227 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:56:41,345 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:56:42,162 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 07:56:42,232 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 07:56:42,233 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 07:56:42,395 - INFO -  * Restarting with stat
+2025-10-28 07:56:42,395 - INFO -  * Restarting with stat
+2025-10-28 07:56:42,435 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 07:56:42,505 - INFO -  * Restarting with stat
+2025-10-28 07:56:42,589 - INFO -  * Restarting with stat
+2025-10-28 07:56:43,160 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:56:43,166 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:56:43,170 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:56:43,175 - WARNING -  * Debugger is active!
+2025-10-28 07:56:43,176 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 07:56:43,176 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:56:43,196 - WARNING -  * Debugger is active!
+2025-10-28 07:56:43,197 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 07:56:43,200 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:56:43,227 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:56:43,252 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:56:43,265 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:56:43,279 - WARNING -  * Debugger is active!
+2025-10-28 07:56:43,280 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 07:56:43,309 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:56:43,344 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:56:43,355 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:56:43,394 - WARNING -  * Debugger is active!
+2025-10-28 07:56:43,395 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 07:56:43,400 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:56:45,241 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:56:45,280 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:56:45,343 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:56:45,438 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:56:46,149 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:56:46,162 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:56:46,188 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:56:46,203 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://172.30.0.2:8000
+2025-10-28 07:56:46,203 - INFO - [33mPress CTRL+C to quit[0m
+2025-10-28 07:56:46,204 - INFO -  * Restarting with stat
+2025-10-28 07:56:47,027 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 07:56:47,036 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 07:56:47,063 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:56:47,076 - WARNING -  * Debugger is active!
+2025-10-28 07:56:47,076 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 07:56:48,227 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:56:49,098 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:57:04,578 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:57:17,298 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:57:17,334 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:57:17,396 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:57:17,493 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:57:19,329 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:57:19,358 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:57:19,426 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:57:19,523 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:57:29,162 - WARNING - 이메일 설정이 완료되지 않았습니다.
+2025-10-28 07:57:29,166 - WARNING - 장치 테스트 장치 ping 실패: [Errno 13] Permission denied
+2025-10-28 07:57:29,167 - WARNING - 이메일 설정이 완료되지 않았습니다.
+2025-10-28 07:57:29,176 - WARNING - 장치 로컬호스트 ping 실패: [Errno 13] Permission denied
+2025-10-28 07:57:30,328 - WARNING - 이메일 설정이 완료되지 않았습니다.
+2025-10-28 07:57:30,336 - WARNING - 장치 테스트 장치 ping 실패: [Errno 13] Permission denied
+2025-10-28 07:57:30,337 - WARNING - 이메일 설정이 완료되지 않았습니다.
+2025-10-28 07:57:30,344 - WARNING - 장치 로컬호스트 ping 실패: [Errno 13] Permission denied
+2025-10-28 07:57:34,578 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:57:38,305 - WARNING - 이메일 설정이 완료되지 않았습니다.
+2025-10-28 07:57:38,315 - WARNING - 장치 테스트 장치 ping 실패: [Errno 13] Permission denied
+2025-10-28 07:57:38,316 - WARNING - 이메일 설정이 완료되지 않았습니다.
+2025-10-28 07:57:38,340 - WARNING - 장치 로컬호스트 ping 실패: [Errno 13] Permission denied
+2025-10-28 07:57:51,372 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:57:51,406 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:57:51,469 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:57:51,567 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:57:53,408 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:57:53,443 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:57:53,502 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:57:53,598 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:58:04,579 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:58:25,455 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:58:25,483 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:58:25,549 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:58:25,644 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:58:27,491 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:58:27,519 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:58:27,579 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:58:27,680 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:58:34,579 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:58:59,534 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:58:59,562 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:58:59,630 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:58:59,721 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:59:01,576 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:59:01,606 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:59:01,667 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:59:01,750 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:59:04,580 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:59:33,610 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:59:33,640 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:59:33,709 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:59:33,804 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 07:59:34,581 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 07:59:35,640 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:59:35,671 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:59:35,747 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 07:59:35,828 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:00:04,581 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 08:00:07,696 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 08:00:07,723 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 08:00:07,788 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 08:00:07,898 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 08:00:09,731 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:00:09,757 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:00:09,819 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:00:09,935 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:00:34,585 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 08:00:41,776 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 08:00:41,808 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 08:00:41,871 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 08:00:41,994 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 08:00:43,811 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:00:43,838 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:00:43,895 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:00:44,028 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:01:04,586 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 08:01:15,859 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 08:01:15,884 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 08:01:15,948 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 08:01:16,075 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 08:01:17,891 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:01:17,933 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:01:18,012 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:01:18,108 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:01:32,252 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 08:01:32,253 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 08:01:32,261 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 08:01:32,398 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 08:01:32,504 - INFO -  * Restarting with stat
+2025-10-28 08:01:32,548 - INFO -  * Restarting with stat
+2025-10-28 08:01:32,576 - INFO -  * Restarting with stat
+2025-10-28 08:01:32,653 - INFO -  * Restarting with stat
+2025-10-28 08:01:33,229 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 08:01:33,235 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 08:01:33,244 - WARNING -  * Debugger is active!
+2025-10-28 08:01:33,245 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 08:01:33,254 - ERROR - 모니터링 중 오류 발생: Error creating backref 'device' on relationship 'Device.alert_logs': property of that name exists on mapper 'Mapper[AlertLog(alert_log)]'
+2025-10-28 08:01:33,283 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 08:01:33,292 - ERROR - 모니터링 중 오류 발생: Error creating backref 'device' on relationship 'Device.alert_logs': property of that name exists on mapper 'Mapper[AlertLog(alert_log)]'
+2025-10-28 08:01:33,292 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 08:01:33,312 - WARNING -  * Debugger is active!
+2025-10-28 08:01:33,317 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 08:01:33,584 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 08:01:33,590 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 08:01:33,602 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 08:01:33,593 - ERROR - 모니터링 중 오류 발생: Error creating backref 'device' on relationship 'Device.alert_logs': property of that name exists on mapper 'Mapper[AlertLog(alert_log)]'
+2025-10-28 08:01:33,611 - ERROR - 모니터링 중 오류 발생: Error creating backref 'device' on relationship 'Device.alert_logs': property of that name exists on mapper 'Mapper[AlertLog(alert_log)]'
+2025-10-28 08:01:33,611 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 08:01:33,615 - WARNING -  * Debugger is active!
+2025-10-28 08:01:33,616 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 08:01:33,628 - WARNING -  * Debugger is active!
+2025-10-28 08:01:33,629 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 08:01:34,588 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 08:01:39,770 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 08:01:39,771 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 08:01:39,919 - INFO -  * Restarting with stat
+2025-10-28 08:01:40,087 - INFO -  * Restarting with stat
+2025-10-28 08:01:40,421 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 08:01:40,508 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 08:01:40,628 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 08:01:40,633 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 08:01:40,642 - WARNING -  * Debugger is active!
+2025-10-28 08:01:40,643 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 08:01:40,653 - INFO -  * Restarting with stat
+2025-10-28 08:01:40,656 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 08:01:40,657 - INFO -  * Restarting with stat
+2025-10-28 08:01:40,729 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 08:01:40,740 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 08:01:40,769 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 08:01:40,774 - WARNING -  * Debugger is active!
+2025-10-28 08:01:40,775 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 08:01:41,563 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 08:01:41,573 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 08:01:41,578 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 08:01:41,590 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 08:01:41,600 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 08:01:41,602 - WARNING -  * Debugger is active!
+2025-10-28 08:01:41,602 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 08:01:41,632 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 08:01:41,633 - WARNING -  * Debugger is active!
+2025-10-28 08:01:41,634 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 08:01:42,709 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:01:42,808 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:01:43,638 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:01:43,659 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:01:54,987 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 08:01:54,996 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 08:01:55,020 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 08:01:55,030 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://172.30.0.2:8000
+2025-10-28 08:01:55,030 - INFO - [33mPress CTRL+C to quit[0m
+2025-10-28 08:01:55,035 - INFO -  * Restarting with stat
+2025-10-28 08:01:55,915 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 08:01:55,924 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 08:01:55,952 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 08:01:55,959 - WARNING -  * Debugger is active!
+2025-10-28 08:01:55,961 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 08:01:57,055 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:01:57,991 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:02:04,589 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 08:02:14,783 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 08:02:14,872 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 08:02:15,716 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 08:02:15,739 - INFO - 권한 오류로 인해 sudo로 재시도: 8.8.8.8
+2025-10-28 08:02:16,817 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:02:16,904 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:02:17,755 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:02:17,770 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:02:29,264 - WARNING - 이메일 설정이 완료되지 않았습니다.
+2025-10-28 08:02:29,273 - WARNING - 장치 테스트 장치 ping 실패: [Errno 13] Permission denied
+2025-10-28 08:02:29,276 - WARNING - 이메일 설정이 완료되지 않았습니다.
+2025-10-28 08:02:29,284 - WARNING - 장치 로컬호스트 ping 실패: [Errno 13] Permission denied
+2025-10-28 08:02:30,441 - WARNING - 이메일 설정이 완료되지 않았습니다.
+2025-10-28 08:02:30,448 - WARNING - 장치 테스트 장치 ping 실패: [Errno 13] Permission denied
+2025-10-28 08:02:30,452 - WARNING - 이메일 설정이 완료되지 않았습니다.
+2025-10-28 08:02:30,455 - WARNING - 장치 로컬호스트 ping 실패: [Errno 13] Permission denied
+2025-10-28 08:02:34,589 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 08:02:38,435 - WARNING - 이메일 설정이 완료되지 않았습니다.
+2025-10-28 08:02:38,445 - WARNING - 장치 로컬호스트 ping 실패: [Errno 13] Permission denied
+2025-10-28 08:02:48,881 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:02:48,945 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:02:49,806 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:02:49,814 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:03:04,590 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 08:03:20,949 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:03:21,007 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:03:21,868 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:03:21,875 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:03:34,590 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 08:03:53,002 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:03:53,067 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:03:53,946 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:03:53,958 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:04:04,591 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 08:04:25,064 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:04:25,137 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:04:25,995 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:04:25,999 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:04:34,591 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 08:04:57,099 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:04:57,198 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:04:58,057 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:04:58,062 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:05:04,592 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 08:05:29,163 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:05:29,259 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:05:30,124 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:05:30,132 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:05:34,596 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 08:06:01,228 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:06:01,296 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:06:02,185 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:06:02,195 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:06:04,596 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 08:06:33,261 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:06:33,357 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:06:34,250 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:06:34,256 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:06:34,598 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 08:07:04,598 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 08:07:05,325 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:07:05,428 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:07:06,280 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:07:06,325 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:07:29,376 - WARNING - 이메일 설정이 완료되지 않았습니다.
+2025-10-28 08:07:29,383 - WARNING - 장치 로컬호스트 ping 실패: [Errno 13] Permission denied
+2025-10-28 08:07:30,547 - WARNING - 이메일 설정이 완료되지 않았습니다.
+2025-10-28 08:07:30,563 - WARNING - 장치 로컬호스트 ping 실패: [Errno 13] Permission denied
+2025-10-28 08:07:34,599 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 08:07:37,386 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:07:37,482 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:07:38,317 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:07:38,380 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:07:38,542 - WARNING - 이메일 설정이 완료되지 않았습니다.
+2025-10-28 08:07:38,553 - WARNING - 장치 로컬호스트 ping 실패: [Errno 13] Permission denied
+2025-10-28 08:08:04,599 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 08:08:09,418 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:08:09,543 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:08:10,375 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:08:10,417 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:08:34,600 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 08:08:41,484 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:08:41,579 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:08:42,414 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:08:42,474 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:09:04,600 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 08:09:13,550 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:09:13,612 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:09:14,471 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:09:14,505 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:09:34,601 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 08:09:45,615 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:09:45,670 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:09:46,513 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:09:46,540 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:10:04,602 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 08:10:17,674 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:10:17,708 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:10:18,571 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:10:18,606 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:10:34,602 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 08:10:49,743 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:10:49,750 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:10:50,641 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:10:50,667 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:11:04,603 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 08:11:21,805 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:11:21,810 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:11:22,697 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:11:22,703 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:11:34,604 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 08:11:53,873 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:11:53,885 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:11:54,766 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:11:54,768 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:12:04,604 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 08:12:25,929 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:12:25,935 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:12:26,795 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:12:26,829 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:12:29,481 - WARNING - 이메일 설정이 완료되지 않았습니다.
+2025-10-28 08:12:29,488 - WARNING - 장치 로컬호스트 ping 실패: [Errno 13] Permission denied
+2025-10-28 08:12:30,630 - WARNING - 이메일 설정이 완료되지 않았습니다.
+2025-10-28 08:12:30,635 - WARNING - 장치 로컬호스트 ping 실패: [Errno 13] Permission denied
+2025-10-28 08:12:34,605 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 08:12:38,631 - WARNING - 이메일 설정이 완료되지 않았습니다.
+2025-10-28 08:12:38,641 - WARNING - 장치 로컬호스트 ping 실패: [Errno 13] Permission denied
+2025-10-28 08:12:57,964 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:12:57,969 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:12:58,829 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:12:58,891 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:13:04,607 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 08:13:30,034 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:13:30,043 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:13:30,887 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:13:30,962 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:13:34,607 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 08:14:02,098 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:14:02,119 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:14:02,927 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:14:03,018 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:14:04,608 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 08:14:34,154 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:14:34,160 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:14:34,609 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 08:14:34,953 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:14:35,082 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:15:04,609 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 08:15:06,222 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:15:06,234 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:15:06,989 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:15:07,124 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:15:34,610 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 08:15:38,283 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:15:38,288 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:15:39,054 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:15:39,185 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:16:04,614 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 08:16:10,345 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:16:10,349 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:16:11,123 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:16:11,250 - INFO - 권한 오류로 인해 sudo로 재시도: 127.0.0.1
+2025-10-28 08:16:27,121 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 08:16:27,233 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 08:16:27,247 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 08:16:27,256 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 08:16:27,383 - INFO -  * Restarting with stat
+2025-10-28 08:16:27,441 - INFO -  * Restarting with stat
+2025-10-28 08:16:27,629 - INFO -  * Restarting with stat
+2025-10-28 08:16:27,655 - INFO -  * Restarting with stat
+2025-10-28 08:16:28,074 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 08:16:28,081 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 08:16:28,089 - WARNING -  * Debugger is active!
+2025-10-28 08:16:28,092 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 08:16:28,101 - ERROR - 모니터링 중 오류 발생: (sqlite3.OperationalError) no such column: device.status
+[SQL: SELECT device.id AS device_id, device.name AS device_name, device.ip_address AS device_ip_address, device.description AS device_description, device.is_active AS device_is_active, device.status AS device_status, device.last_ping_time AS device_last_ping_time, device.created_at AS device_created_at, device.updated_at AS device_updated_at 
+FROM device 
+WHERE device.is_active = 1]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-10-28 08:16:28,218 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 08:16:28,225 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 08:16:28,240 - ERROR - 모니터링 중 오류 발생: (sqlite3.OperationalError) no such column: device.status
+[SQL: SELECT device.id AS device_id, device.name AS device_name, device.ip_address AS device_ip_address, device.description AS device_description, device.is_active AS device_is_active, device.status AS device_status, device.last_ping_time AS device_last_ping_time, device.created_at AS device_created_at, device.updated_at AS device_updated_at 
+FROM device 
+WHERE device.is_active = 1]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-10-28 08:16:28,246 - WARNING -  * Debugger is active!
+2025-10-28 08:16:28,250 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 08:16:28,388 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 08:16:28,402 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 08:16:28,410 - ERROR - 모니터링 중 오류 발생: (sqlite3.OperationalError) no such column: device.status
+[SQL: SELECT device.id AS device_id, device.name AS device_name, device.ip_address AS device_ip_address, device.description AS device_description, device.is_active AS device_is_active, device.status AS device_status, device.last_ping_time AS device_last_ping_time, device.created_at AS device_created_at, device.updated_at AS device_updated_at 
+FROM device 
+WHERE device.is_active = 1]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-10-28 08:16:28,431 - WARNING -  * Debugger is active!
+2025-10-28 08:16:28,432 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 08:16:28,435 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 08:16:28,443 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 08:16:28,467 - ERROR - 모니터링 중 오류 발생: (sqlite3.OperationalError) no such column: device.status
+[SQL: SELECT device.id AS device_id, device.name AS device_name, device.ip_address AS device_ip_address, device.description AS device_description, device.is_active AS device_is_active, device.status AS device_status, device.last_ping_time AS device_last_ping_time, device.created_at AS device_created_at, device.updated_at AS device_updated_at 
+FROM device 
+WHERE device.is_active = 1]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-10-28 08:16:28,472 - WARNING -  * Debugger is active!
+2025-10-28 08:16:28,473 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 08:16:34,615 - ERROR - 모니터링 중 오류 발생: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-10-28 08:16:35,624 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 08:16:35,665 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 08:16:35,928 - INFO -  * Restarting with stat
+2025-10-28 08:16:35,949 - INFO -  * Restarting with stat
+2025-10-28 08:16:36,312 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 08:16:36,461 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 08:16:36,669 - INFO -  * Restarting with stat
+2025-10-28 08:16:36,863 - INFO -  * Restarting with stat
+2025-10-28 08:16:36,971 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 08:16:36,977 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 08:16:37,003 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 08:16:37,009 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 08:16:37,028 - WARNING -  * Debugger is active!
+2025-10-28 08:16:37,029 - ERROR - 모니터링 중 오류 발생: (sqlite3.OperationalError) no such column: device.status
+[SQL: SELECT device.id AS device_id, device.name AS device_name, device.ip_address AS device_ip_address, device.description AS device_description, device.is_active AS device_is_active, device.status AS device_status, device.last_ping_time AS device_last_ping_time, device.created_at AS device_created_at, device.updated_at AS device_updated_at 
+FROM device 
+WHERE device.is_active = 1]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-10-28 08:16:37,029 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 08:16:37,035 - WARNING -  * Debugger is active!
+2025-10-28 08:16:37,036 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 08:16:37,076 - ERROR - 모니터링 중 오류 발생: (sqlite3.OperationalError) no such column: device.status
+[SQL: SELECT device.id AS device_id, device.name AS device_name, device.ip_address AS device_ip_address, device.description AS device_description, device.is_active AS device_is_active, device.status AS device_status, device.last_ping_time AS device_last_ping_time, device.created_at AS device_created_at, device.updated_at AS device_updated_at 
+FROM device 
+WHERE device.is_active = 1]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-10-28 08:16:37,644 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 08:16:37,650 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 08:16:37,683 - ERROR - 모니터링 중 오류 발생: (sqlite3.OperationalError) no such column: device.status
+[SQL: SELECT device.id AS device_id, device.name AS device_name, device.ip_address AS device_ip_address, device.description AS device_description, device.is_active AS device_is_active, device.status AS device_status, device.last_ping_time AS device_last_ping_time, device.created_at AS device_created_at, device.updated_at AS device_updated_at 
+FROM device 
+WHERE device.is_active = 1]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-10-28 08:16:37,686 - WARNING -  * Debugger is active!
+2025-10-28 08:16:37,686 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 08:16:37,726 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 08:16:37,735 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 08:16:37,756 - ERROR - 모니터링 중 오류 발생: (sqlite3.OperationalError) no such column: device.status
+[SQL: SELECT device.id AS device_id, device.name AS device_name, device.ip_address AS device_ip_address, device.description AS device_description, device.is_active AS device_is_active, device.status AS device_status, device.last_ping_time AS device_last_ping_time, device.created_at AS device_created_at, device.updated_at AS device_updated_at 
+FROM device 
+WHERE device.is_active = 1]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-10-28 08:16:37,775 - WARNING -  * Debugger is active!
+2025-10-28 08:16:37,775 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 08:16:43,869 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 08:16:43,938 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 08:16:44,168 - INFO -  * Restarting with stat
+2025-10-28 08:16:44,230 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 08:16:44,237 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 08:16:44,260 - INFO -  * Restarting with stat
+2025-10-28 08:16:44,442 - INFO -  * Restarting with stat
+2025-10-28 08:16:44,467 - INFO -  * Restarting with stat
+2025-10-28 08:16:44,803 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 08:16:44,816 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 08:16:44,838 - WARNING -  * Debugger is active!
+2025-10-28 08:16:44,861 - ERROR - 모니터링 중 오류 발생: (sqlite3.OperationalError) no such column: device.status
+[SQL: SELECT device.id AS device_id, device.name AS device_name, device.ip_address AS device_ip_address, device.description AS device_description, device.is_active AS device_is_active, device.status AS device_status, device.last_ping_time AS device_last_ping_time, device.created_at AS device_created_at, device.updated_at AS device_updated_at 
+FROM device 
+WHERE device.is_active = 1]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-10-28 08:16:44,862 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 08:16:44,977 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 08:16:44,989 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 08:16:45,015 - ERROR - 모니터링 중 오류 발생: (sqlite3.OperationalError) no such column: device.status
+[SQL: SELECT device.id AS device_id, device.name AS device_name, device.ip_address AS device_ip_address, device.description AS device_description, device.is_active AS device_is_active, device.status AS device_status, device.last_ping_time AS device_last_ping_time, device.created_at AS device_created_at, device.updated_at AS device_updated_at 
+FROM device 
+WHERE device.is_active = 1]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-10-28 08:16:45,023 - WARNING -  * Debugger is active!
+2025-10-28 08:16:45,023 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 08:16:45,065 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 08:16:45,071 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 08:16:45,083 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 08:16:45,093 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 08:16:45,110 - ERROR - 모니터링 중 오류 발생: (sqlite3.OperationalError) no such column: device.status
+[SQL: SELECT device.id AS device_id, device.name AS device_name, device.ip_address AS device_ip_address, device.description AS device_description, device.is_active AS device_is_active, device.status AS device_status, device.last_ping_time AS device_last_ping_time, device.created_at AS device_created_at, device.updated_at AS device_updated_at 
+FROM device 
+WHERE device.is_active = 1]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-10-28 08:16:45,115 - ERROR - 모니터링 중 오류 발생: (sqlite3.OperationalError) no such column: device.status
+[SQL: SELECT device.id AS device_id, device.name AS device_name, device.ip_address AS device_ip_address, device.description AS device_description, device.is_active AS device_is_active, device.status AS device_status, device.last_ping_time AS device_last_ping_time, device.created_at AS device_created_at, device.updated_at AS device_updated_at 
+FROM device 
+WHERE device.is_active = 1]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-10-28 08:16:45,122 - WARNING -  * Debugger is active!
+2025-10-28 08:16:45,123 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 08:16:45,127 - WARNING -  * Debugger is active!
+2025-10-28 08:16:45,127 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 08:16:51,045 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 08:16:51,215 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 08:16:51,296 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 08:16:51,300 - INFO -  * Detected change in '/workspace/app.py', reloading
+2025-10-28 08:16:51,328 - INFO -  * Restarting with stat
+2025-10-28 08:16:51,385 - INFO -  * Restarting with stat
+2025-10-28 08:16:51,474 - INFO -  * Restarting with stat
+2025-10-28 08:16:51,641 - INFO -  * Restarting with stat
+2025-10-28 08:20:00,463 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 08:20:00,474 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 08:20:00,487 - ERROR - 모니터링 중 오류 발생: (sqlite3.OperationalError) no such column: device.status
+[SQL: SELECT device.id AS device_id, device.name AS device_name, device.ip_address AS device_ip_address, device.description AS device_description, device.is_active AS device_is_active, device.status AS device_status, device.last_ping_time AS device_last_ping_time, device.created_at AS device_created_at, device.updated_at AS device_updated_at 
+FROM device 
+WHERE device.is_active = 1]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-10-28 08:20:00,496 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://172.30.0.2:8000
+2025-10-28 08:20:00,498 - INFO - [33mPress CTRL+C to quit[0m
+2025-10-28 08:20:00,500 - INFO -  * Restarting with stat
+2025-10-28 08:20:01,118 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 08:20:01,127 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 08:20:01,152 - ERROR - 모니터링 중 오류 발생: (sqlite3.OperationalError) no such column: device.status
+[SQL: SELECT device.id AS device_id, device.name AS device_name, device.ip_address AS device_ip_address, device.description AS device_description, device.is_active AS device_is_active, device.status AS device_status, device.last_ping_time AS device_last_ping_time, device.created_at AS device_created_at, device.updated_at AS device_updated_at 
+FROM device 
+WHERE device.is_active = 1]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-10-28 08:20:01,163 - WARNING -  * Debugger is active!
+2025-10-28 08:20:01,164 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 08:20:45,843 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 08:20:45,853 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 08:20:45,878 - ERROR - 모니터링 중 오류 발생: (sqlite3.OperationalError) no such column: device.status
+[SQL: SELECT device.id AS device_id, device.name AS device_name, device.ip_address AS device_ip_address, device.description AS device_description, device.is_active AS device_is_active, device.status AS device_status, device.last_ping_time AS device_last_ping_time, device.created_at AS device_created_at, device.updated_at AS device_updated_at 
+FROM device 
+WHERE device.is_active = 1]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-10-28 08:20:45,895 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://172.30.0.2:8000
+2025-10-28 08:20:45,895 - INFO - [33mPress CTRL+C to quit[0m
+2025-10-28 08:20:45,901 - INFO -  * Restarting with stat
+2025-10-28 08:20:46,490 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 08:20:46,500 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 08:20:46,523 - ERROR - 모니터링 중 오류 발생: (sqlite3.OperationalError) no such column: device.status
+[SQL: SELECT device.id AS device_id, device.name AS device_name, device.ip_address AS device_ip_address, device.description AS device_description, device.is_active AS device_is_active, device.status AS device_status, device.last_ping_time AS device_last_ping_time, device.created_at AS device_created_at, device.updated_at AS device_updated_at 
+FROM device 
+WHERE device.is_active = 1]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-10-28 08:20:46,526 - WARNING -  * Debugger is active!
+2025-10-28 08:20:46,526 - INFO -  * Debugger PIN: 474-574-673
+2025-10-28 08:23:01,837 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 08:23:01,846 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 08:23:01,887 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://172.30.0.2:8000
+2025-10-28 08:23:01,888 - INFO - [33mPress CTRL+C to quit[0m
+2025-10-28 08:23:01,889 - INFO -  * Restarting with stat
+2025-10-28 08:23:02,503 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-28 08:23:02,512 - INFO - 모니터링이 시작되었습니다.
+2025-10-28 08:23:02,547 - WARNING -  * Debugger is active!
+2025-10-28 08:23:02,547 - INFO -  * Debugger PIN: 474-574-673
+2025-10-29 00:27:57,017 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-29 00:27:57,029 - INFO - 모니터링이 시작되었습니다.
+2025-10-29 00:27:57,108 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://172.30.0.2:8000
+2025-10-29 00:27:57,108 - INFO - [33mPress CTRL+C to quit[0m
+2025-10-29 00:27:57,114 - INFO -  * Restarting with stat
+2025-10-29 00:27:58,594 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-29 00:27:58,604 - INFO - 모니터링이 시작되었습니다.
+2025-10-29 00:27:58,669 - WARNING -  * Debugger is active!
+2025-10-29 00:27:58,670 - INFO -  * Debugger PIN: 474-574-673
+2025-10-29 00:34:12,471 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-29 00:34:12,486 - INFO - 모니터링이 시작되었습니다.
+2025-10-29 00:34:12,536 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://172.30.0.2:8000
+2025-10-29 00:34:12,537 - INFO - [33mPress CTRL+C to quit[0m
+2025-10-29 00:34:12,543 - INFO -  * Restarting with stat
+2025-10-29 00:34:14,231 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-29 00:34:14,246 - INFO - 모니터링이 시작되었습니다.
+2025-10-29 00:34:14,308 - WARNING -  * Debugger is active!
+2025-10-29 00:34:14,309 - INFO -  * Debugger PIN: 474-574-673
+2025-10-29 00:37:59,886 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-29 00:37:59,895 - INFO - 모니터링이 시작되었습니다.
+2025-10-29 00:37:59,957 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://172.30.0.2:8000
+2025-10-29 00:37:59,958 - INFO - [33mPress CTRL+C to quit[0m
+2025-10-29 00:37:59,961 - INFO -  * Restarting with stat
+2025-10-29 00:38:01,031 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-29 00:38:01,042 - INFO - 모니터링이 시작되었습니다.
+2025-10-29 00:38:01,080 - WARNING -  * Debugger is active!
+2025-10-29 00:38:01,081 - INFO -  * Debugger PIN: 474-574-673
+2025-10-29 00:51:48,532 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-29 00:51:48,543 - INFO - 모니터링이 시작되었습니다.
+2025-10-29 00:51:48,572 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://172.30.0.2:8000
+2025-10-29 00:51:48,577 - INFO - [33mPress CTRL+C to quit[0m
+2025-10-29 00:51:48,579 - INFO -  * Restarting with stat
+2025-10-29 00:51:49,192 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-29 00:51:49,206 - INFO - 모니터링이 시작되었습니다.
+2025-10-29 00:51:49,235 - WARNING -  * Debugger is active!
+2025-10-29 00:51:49,236 - INFO -  * Debugger PIN: 474-574-673
+2025-10-29 01:27:54,854 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-29 01:27:54,864 - INFO - 모니터링이 시작되었습니다.
+2025-10-29 01:27:54,913 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://172.30.0.2:8000
+2025-10-29 01:27:54,914 - INFO - [33mPress CTRL+C to quit[0m
+2025-10-29 01:27:54,920 - INFO -  * Restarting with stat
+2025-10-29 01:27:56,219 - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-10-29 01:27:56,228 - INFO - 모니터링이 시작되었습니다.
+2025-10-29 01:27:56,268 - WARNING -  * Debugger is active!
+2025-10-29 01:27:56,272 - INFO -  * Debugger PIN: 474-574-673
