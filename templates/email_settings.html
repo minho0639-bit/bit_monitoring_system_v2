@@ -183,7 +183,12 @@ function testEmail() {
     formData.append('smtp_username', document.getElementById('smtp_username').value);
     formData.append('smtp_password', document.getElementById('smtp_password').value);
     formData.append('alert_email', document.getElementById('alert_email').value);
-    formData.append('is_enabled', document.getElementById('is_enabled').checked);
+    
+    // 체크박스 값 처리
+    const isEnabled = document.getElementById('is_enabled').checked;
+    if (isEnabled) {
+        formData.append('is_enabled', 'on');
+    }
     
     // 테스트 이메일 전송 요청
     fetch('/api/test_email', {
