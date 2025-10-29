@@ -56,7 +56,11 @@
                         <label for="smtp_password" class="form-label">비밀번호 <span class="text-danger">*</span></label>
                         <input type="password" class="form-control" id="smtp_password" name="smtp_password" 
                                value="{{ settings.smtp_password }}" required>
-                        <div class="form-text">Gmail의 경우 일반 비밀번호가 아닌 앱 비밀번호를 사용하세요.</div>
+                        <div class="form-text">
+                            <strong>Gmail:</strong> 앱 비밀번호 (16자리) 사용<br>
+                            <strong>Naver/Outlook:</strong> 일반 비밀번호 사용<br>
+                            <strong>Yahoo:</strong> 앱 비밀번호 사용
+                        </div>
                     </div>
 
                     <div class="mb-3">
@@ -90,8 +94,8 @@
                 <ul class="mb-3">
                     <li><strong>SMTP 서버:</strong> smtp.gmail.com</li>
                     <li><strong>포트:</strong> 587</li>
-                    <li><strong>사용자명:</strong> Gmail 주소</li>
-                    <li><strong>비밀번호:</strong> 앱 비밀번호 (2단계 인증 필요)</li>
+                    <li><strong>사용자명:</strong> Gmail 주소 (예: yourname@gmail.com)</li>
+                    <li><strong>비밀번호:</strong> 앱 비밀번호 (16자리) - <a href="https://support.google.com/accounts/answer/185833" target="_blank">앱 비밀번호 생성 방법</a></li>
                 </ul>
                 
                 <h6>Naver 설정</h6>
@@ -100,6 +104,28 @@
                     <li><strong>포트:</strong> 587</li>
                     <li><strong>사용자명:</strong> Naver 이메일 주소</li>
                     <li><strong>비밀번호:</strong> Naver 비밀번호</li>
+                </ul>
+                
+                <h6>Outlook/Hotmail 설정</h6>
+                <ul class="mb-3">
+                    <li><strong>SMTP 서버:</strong> smtp-mail.outlook.com</li>
+                    <li><strong>포트:</strong> 587</li>
+                    <li><strong>사용자명:</strong> Outlook 이메일 주소</li>
+                    <li><strong>비밀번호:</strong> Outlook 비밀번호</li>
+                </ul>
+                
+                <h6>Yahoo 설정</h6>
+                <ul class="mb-3">
+                    <li><strong>SMTP 서버:</strong> smtp.mail.yahoo.com</li>
+                    <li><strong>포트:</strong> 587</li>
+                    <li><strong>사용자명:</strong> Yahoo 이메일 주소</li>
+                    <li><strong>비밀번호:</strong> 앱 비밀번호 (Yahoo 계정 설정에서 생성)</li>
+                </ul>
+                
+                <h6>기타 SMTP 서버</h6>
+                <ul class="mb-3">
+                    <li><strong>회사 메일:</strong> IT 부서에 문의하여 SMTP 서버 정보 확인</li>
+                    <li><strong>기타 제공업체:</strong> 해당 이메일 제공업체의 SMTP 설정 확인</li>
                 </ul>
                 
                 <h6>알림 조건</h6>

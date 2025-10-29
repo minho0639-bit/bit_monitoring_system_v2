@@ -145,8 +145,17 @@ IP 주소: {device.ip_address}
         logger.info(f"이메일 알림 전송 완료: {device.name}")
         return True
         
+    except smtplib.SMTPAuthenticationError as e:
+        logger.error(f"이메일 인증 실패: {device.name} - {e}")
+        return False
+    except smtplib.SMTPConnectError as e:
+        logger.error(f"SMTP 서버 연결 실패: {device.name} - {e}")
+        return False
+    except smtplib.SMTPException as e:
+        logger.error(f"SMTP 오류: {device.name} - {e}")
+        return False
     except Exception as e:
-        logger.error(f"이메일 전송 실패: {e}")
+        logger.error(f"이메일 전송 실패: {device.name} - {e}")
         return False
 
 def ping_device(device: Device) -> Dict:
@@ -515,6 +524,15 @@ Ping 모니터링 시스템
         
         return jsonify({'success': True, 'message': '테스트 이메일이 전송되었습니다.'})
         
+    except smtplib.SMTPAuthenticationError as e:
+        error_msg = "인증 실패: 사용자명 또는 비밀번호가 올바르지 않습니다."
+        if "gmail" in settings.smtp_server.lower():
+            error_msg += " Gmail의 경우 앱 비밀번호를 사용하세요."
+        return jsonify({'success': False, 'message': error_msg})
+    except smtplib.SMTPConnectError as e:
+        return jsonify({'success': False, 'message': f'SMTP 서버 연결 실패: {settings.smtp_server}:{settings.smtp_port}'})
+    except smtplib.SMTPException as e:
+        return jsonify({'success': False, 'message': f'SMTP 오류: {str(e)}'})
     except Exception as e:
         return jsonify({'success': False, 'message': f'이메일 전송 실패: {str(e)}'})
 
