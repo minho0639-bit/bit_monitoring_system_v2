@@ -42,12 +42,7 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-# 이메일 설정 (환경변수에서 로드)
-SMTP_SERVER = os.getenv('SMTP_SERVER', 'smtp.gmail.com')
-SMTP_PORT = int(os.getenv('SMTP_PORT', '587'))
-SMTP_USERNAME = os.getenv('SMTP_USERNAME', '')
-SMTP_PASSWORD = os.getenv('SMTP_PASSWORD', '')
-ALERT_EMAIL = os.getenv('ALERT_EMAIL', '')
+# 이메일 설정은 이제 데이터베이스에서 관리됩니다
 
 # 데이터베이스 모델
 class Device(db.Model):
@@ -101,13 +96,13 @@ def get_email_settings():
     """이메일 설정을 데이터베이스에서 가져오기"""
     settings = EmailSettings.query.first()
     if not settings:
-        # 기본 설정 생성
+        # 기본 설정 생성 (빈 값으로 초기화)
         settings = EmailSettings(
-            smtp_server=SMTP_SERVER,
-            smtp_port=SMTP_PORT,
-            smtp_username=SMTP_USERNAME,
-            smtp_password=SMTP_PASSWORD,
-            alert_email=ALERT_EMAIL
+            smtp_server='smtp.gmail.com',
+            smtp_port=587,
+            smtp_username='',
+            smtp_password='',
+            alert_email=''
         )
         db.session.add(settings)
         db.session.commit()

@@ -25,11 +25,12 @@
 pip install -r requirements.txt
 ```
 
-### 2. 환경변수 설정
+### 2. 환경변수 설정 (선택사항)
 
 ```bash
 cp .env.example .env
-# .env 파일을 편집하여 이메일 설정을 구성하세요
+# .env 파일은 Flask 기본 설정만 포함합니다
+# 이메일 설정은 웹 인터페이스에서 관리됩니다
 ```
 
 ### 3. 데이터베이스 초기화
@@ -63,15 +64,14 @@ python app.py
 
 ### 이메일 알림 설정
 
-`.env` 파일에서 다음 설정을 구성하세요:
+웹 인터페이스에서 이메일 설정을 구성하세요:
 
-```env
-SMTP_SERVER=smtp.gmail.com
-SMTP_PORT=587
-SMTP_USERNAME=your-email@gmail.com
-SMTP_PASSWORD=your-app-password
-ALERT_EMAIL=admin@yourcompany.com
-```
+1. 웹 브라우저에서 `http://localhost:8000/email_settings` 접속
+2. SMTP 서버 정보 입력:
+   - **Gmail**: smtp.gmail.com:587 (앱 비밀번호 사용)
+   - **Naver**: smtp.naver.com:587
+3. "테스트 이메일 전송" 버튼으로 설정 확인
+4. "설정 저장" 버튼으로 저장
 
 ## 모니터링 주기
 
