@@ -489,35 +489,50 @@ def email_settings():
 def test_email():
     """테스트 이메일 전송"""
     try:
-        settings = get_email_settings()
-        if not settings.is_enabled:
-            return jsonify({'success': False, 'message': '이메일 알림이 비활성화되어 있습니다.'})
+        # 폼 데이터에서 설정 가져오기
+        smtp_server = request.form.get('smtp_server', '').strip()
+        smtp_port = request.form.get('smtp_port', '587')
+        smtp_username = request.form.get('smtp_username', '').strip()
+        smtp_password = request.form.get('smtp_password', '').strip()
+        alert_email = request.form.get('alert_email', '').strip()
+        is_enabled = request.form.get('is_enabled') == 'on'
         
         # 설정 검증
-        if not settings.smtp_server or not settings.smtp_username or not settings.smtp_password or not settings.alert_email:
+        if not smtp_server or not smtp_username or not smtp_password or not alert_email:
             return jsonify({'success': False, 'message': '이메일 설정이 완전하지 않습니다. 모든 필드를 입력해주세요.'})
+        
+        if not is_enabled:
+            return jsonify({'success': False, 'message': '이메일 알림이 비활성화되어 있습니다. 먼저 이메일 알림을 활성화해주세요.'})
         
         # 이메일 주소 형식 검증
         import re
         email_pattern = r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$'
-        if not re.match(email_pattern, settings.smtp_username):
-            return jsonify({'success': False, 'message': f'사용자명 이메일 형식이 올바르지 않습니다: {settings.smtp_username}'})
-        if not re.match(email_pattern, settings.alert_email):
-            return jsonify({'success': False, 'message': f'알림 이메일 형식이 올바르지 않습니다: {settings.alert_email}'})
+        if not re.match(email_pattern, smtp_username):
+            return jsonify({'success': False, 'message': f'사용자명 이메일 형식이 올바르지 않습니다: {smtp_username}'})
+        if not re.match(email_pattern, alert_email):
+            return jsonify({'success': False, 'message': f'알림 이메일 형식이 올바르지 않습니다: {alert_email}'})
+        
+        # 포트 번호 검증
+        try:
+            smtp_port = int(smtp_port)
+            if smtp_port <= 0 or smtp_port > 65535:
+                return jsonify({'success': False, 'message': f'포트 번호가 올바르지 않습니다: {smtp_port}'})
+        except ValueError:
+            return jsonify({'success': False, 'message': f'포트 번호는 숫자여야 합니다: {smtp_port}'})
         
         # 테스트 이메일 전송
         msg = MIMEMultipart()
-        msg['From'] = settings.smtp_username
-        msg['To'] = settings.alert_email
+        msg['From'] = smtp_username
+        msg['To'] = alert_email
         msg['Subject'] = '[테스트] Ping 모니터링 시스템 이메일 설정 확인'
         
         body = f"""
 이것은 Ping 모니터링 시스템의 테스트 이메일입니다.
 
 설정 정보:
-- SMTP 서버: {settings.smtp_server}:{settings.smtp_port}
-- 사용자명: {settings.smtp_username}
-- 알림 이메일: {settings.alert_email}
+- SMTP 서버: {smtp_server}:{smtp_port}
+- 사용자명: {smtp_username}
+- 알림 이메일: {alert_email}
 - 전송 시간: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}
 
 이메일 설정이 정상적으로 작동합니다.
@@ -527,35 +542,35 @@ Ping 모니터링 시스템
         
         msg.attach(MIMEText(body, 'plain', 'utf-8'))
         
-        server = smtplib.SMTP(settings.smtp_server, settings.smtp_port)
+        server = smtplib.SMTP(smtp_server, smtp_port)
         server.starttls()
-        server.login(settings.smtp_username, settings.smtp_password)
+        server.login(smtp_username, smtp_password)
         text = msg.as_string()
-        server.sendmail(settings.smtp_username, settings.alert_email, text)
+        server.sendmail(smtp_username, alert_email, text)
         server.quit()
         
         return jsonify({'success': True, 'message': '테스트 이메일이 전송되었습니다.'})
         
     except smtplib.SMTPAuthenticationError as e:
         error_msg = "🔐 인증 실패: 사용자명 또는 비밀번호가 올바르지 않습니다.\n\n"
-        if "gmail" in settings.smtp_server.lower():
+        if "gmail" in smtp_server.lower():
             error_msg += "Gmail 설정 방법:\n"
             error_msg += "1. Google 계정에서 2단계 인증 활성화\n"
             error_msg += "2. 앱 비밀번호 생성 (16자리)\n"
             error_msg += "3. 일반 비밀번호 대신 앱 비밀번호 사용\n"
             error_msg += "4. 링크: https://support.google.com/accounts/answer/185833"
-        elif "naver" in settings.smtp_server.lower():
+        elif "naver" in smtp_server.lower():
             error_msg += "Naver 설정 방법:\n"
             error_msg += "1. Naver 메일에서 POP3/IMAP 설정 활성화\n"
             error_msg += "2. 보안 설정에서 '보안 수준이 낮은 앱의 액세스' 허용"
-        elif "outlook" in settings.smtp_server.lower() or "hotmail" in settings.smtp_server.lower():
+        elif "outlook" in smtp_server.lower() or "hotmail" in smtp_server.lower():
             error_msg += "Outlook 설정 방법:\n"
             error_msg += "1. Microsoft 계정에서 2단계 인증 활성화\n"
             error_msg += "2. 앱 비밀번호 생성\n"
             error_msg += "3. 일반 비밀번호 대신 앱 비밀번호 사용"
         return jsonify({'success': False, 'message': error_msg})
     except smtplib.SMTPConnectError as e:
-        return jsonify({'success': False, 'message': f'🌐 SMTP 서버 연결 실패\n\n서버: {settings.smtp_server}\n포트: {settings.smtp_port}\n\n확인사항:\n- 서버 주소와 포트 번호가 올바른지 확인\n- 방화벽에서 포트 587이 차단되지 않았는지 확인\n- 네트워크 연결 상태 확인'})
+        return jsonify({'success': False, 'message': f'🌐 SMTP 서버 연결 실패\n\n서버: {smtp_server}\n포트: {smtp_port}\n\n확인사항:\n- 서버 주소와 포트 번호가 올바른지 확인\n- 방화벽에서 포트 587이 차단되지 않았는지 확인\n- 네트워크 연결 상태 확인'})
     except smtplib.SMTPException as e:
         return jsonify({'success': False, 'message': f'📧 SMTP 오류\n\n오류 내용: {str(e)}\n\n확인사항:\n- 이메일 주소 형식이 올바른지 확인\n- SMTP 서버 설정이 정확한지 확인'})
     except Exception as e:

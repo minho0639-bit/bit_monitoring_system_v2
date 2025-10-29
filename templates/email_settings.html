@@ -176,12 +176,19 @@ function testEmail() {
     testBtn.disabled = true;
     testBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> 전송 중...';
     
-    // 간단한 테스트 이메일 전송 요청
+    // 폼 데이터 수집
+    const formData = new FormData();
+    formData.append('smtp_server', document.getElementById('smtp_server').value);
+    formData.append('smtp_port', document.getElementById('smtp_port').value);
+    formData.append('smtp_username', document.getElementById('smtp_username').value);
+    formData.append('smtp_password', document.getElementById('smtp_password').value);
+    formData.append('alert_email', document.getElementById('alert_email').value);
+    formData.append('is_enabled', document.getElementById('is_enabled').checked);
+    
+    // 테스트 이메일 전송 요청
     fetch('/api/test_email', {
         method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        }
+        body: formData
     })
     .then(response => response.json())
     .then(data => {
